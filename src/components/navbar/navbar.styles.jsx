@@ -73,4 +73,19 @@ top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
 
+
 `
+
+export const SideButton = styled.a`
+  border:none;display:inline-block;padding:8px 16px;
+  vertical-align:middle;overflow:hidden;text-decoration:none;
+  color:inherit;background-color:inherit;text-align:center;cursor:pointer;
+  white-space:nowrap;
+  color:#fff!important;background-color:#000!important;
+  font-size:36px!important;
+  padding:8px 16px!important;
+  position:absolute;right:0;
+  top:0;
+`
+
+

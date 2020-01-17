@@ -16,7 +16,7 @@ import Fade from '@material-ui/core/Fade';
 
 //Styles
 
-import {OptionsContainer,OptionDiv,StyledGrid,LogoDiv,Drawner,CenterText} from './navbar.styles.jsx';
+import {OptionsContainer,OptionDiv,StyledGrid,LogoDiv,Drawner,CenterText, SideButton} from './navbar.styles.jsx';
 
 
 
@@ -30,7 +30,9 @@ import {OptionsContainer,OptionDiv,StyledGrid,LogoDiv,Drawner,CenterText} from '
     console.log("El valor es de : ",drawner);
   }
 
-
+  const handleExit = () => {
+    setdrawner(false);
+  }
   
   
   useEffect(() => {
@@ -52,8 +54,15 @@ return (
 
     <Fade in={drawner}>
     <div>
+   
     <Drawner>
+    <SideButton >
+    <i onClick={handleExit}  className="fa fa-remove"></i>
+  </SideButton>
+    
     <CenterText>
+
+
     <OptionDiv>Cursos</OptionDiv>
     <OptionDiv>Alumnos</OptionDiv>
     <OptionDiv>Webinars</OptionDiv>
@@ -68,12 +77,13 @@ return (
 
    
       <CssBaseline />
+      <Fade in={!drawner}>
       <AppBar position="fixed" className="appbar"
       
-    style={(count<15) ? {'background':'transparent','transition':'0.4s'}:{'backgroundColor':'black','transition':'0.4s'}}
+    style={
+      (count<15) ? {'background':'transparent','transition':'0.4s'}:{'backgroundColor':'black','transition':'0.4s'}
+    }
 
-        //backgroundColor={navBackground ? 'white' : 'transparent'}
-        //style={{ transition: '1s ease' }}
         >
         <Toolbar>
           <Hidden mdUp>
@@ -93,7 +103,7 @@ return (
           </Hidden>
           <LogoDiv>
           <Typography variant="h6" noWrap>
-            Agora 3d
+            {title}
           </Typography>
           </LogoDiv>
           <Hidden smDown>
@@ -117,6 +127,7 @@ return (
         </Toolbar>
       
       </AppBar>
+      </Fade>
 
     
    
