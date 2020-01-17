@@ -1,0 +1,52 @@
+.App {
+    text-align: center;
+  }
+  
+  
+  .App-logo {
+    height: 40vmin;
+  }
+  
+  .App-header {
+    background-color: red;
+  
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: black;
+    margin:0;
+  
+    
+  
+      
+  }
+
+
+  
+  .section{
+    margin:0;
+  
+  }
+  
+  .App-link {
+    color: #09d3ac;
+  }
+
+
+/* Centered text */
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-style: solid;
+  border-width: 5px;
+}
+
+.react-parallax-bgimage{
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+  
