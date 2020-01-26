@@ -8,6 +8,8 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
 import Fade from '@material-ui/core/Fade';
+import Link from '@material-ui/core/Link';
+
 
 
 
@@ -16,7 +18,7 @@ import Fade from '@material-ui/core/Fade';
 
 //Styles
 
-import {OptionsContainer,OptionDiv,StyledGrid,LogoDiv,Drawner,CenterText, SideButton} from './navbar.styles.jsx';
+import {OptionsContainer,OptionLink,StyledGrid,LogoDiv,Drawner,CenterText, SideButton} from './navbar.styles.jsx';
 
 
 
@@ -63,11 +65,13 @@ return (
     <CenterText>
 
 
-    <OptionDiv>Cursos</OptionDiv>
-    <OptionDiv>Alumnos</OptionDiv>
-    <OptionDiv>Webinars</OptionDiv>
-    <OptionDiv >Equipo</OptionDiv>
-    <OptionDiv >Ingresar</OptionDiv>
+    <OptionLink>Cursos</OptionLink>
+    <OptionLink>Alumnos</OptionLink>
+    <OptionLink>Webinars</OptionLink>
+    <Link to="team">
+    <OptionLink >Equipo</OptionLink>
+    </Link>
+    <OptionLink >Ingresar</OptionLink>
 
     </CenterText>
     </Drawner>
@@ -112,11 +116,11 @@ return (
           justify="flex-end"
           alignItems="center">
           <OptionsContainer>
-          <OptionDiv>Cursos</OptionDiv>
-          <OptionDiv>Alumnos</OptionDiv>
-          <OptionDiv>Webinars</OptionDiv>
-          <OptionDiv >Equipo</OptionDiv>
-          <OptionDiv >Ingresar</OptionDiv>
+          <OptionLink to="/team" >Cursos</OptionLink>
+          <OptionLink>Alumnos</OptionLink>
+          <OptionLink>Webinars</OptionLink>
+          <OptionLink >Equipo</OptionLink>
+          <OptionLink >Ingresar</OptionLink>
           
 
         </OptionsContainer>
