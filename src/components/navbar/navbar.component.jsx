@@ -21,10 +21,10 @@ import {OptionsContainer,OptionDiv,StyledGrid,LogoDiv,Drawner,CenterText, SideBu
 
 
 
- const Navbar = ({title}) => {
+ const Navbar = ({title,effect}) => {
   const [count, setCount] = useState(0);
   const [drawner, setdrawner] = useState(false);
-
+  console.log("El effect es : ",effect);
   const handleClick = () => {
     setdrawner(true);
     console.log("El valor es de : ",drawner);

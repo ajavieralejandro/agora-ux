@@ -1,11 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import Navbar from "./components/navbar/navbar.component";
 import './App.css';
+import { Switch, Route, Redirect } from "react-router-dom";
 import HomePage from './pages/homepage/homepage.page';
+import TeamPage from './pages/teampage/team.page';
+
 
 function App() {
   return (
-   <HomePage />
+    <div className="app-wrapper">
+    <Switch>
+      <Route exact path="/team" component={TeamPage} />
+      <Route  path="/" component={HomePage} />
+
+    </Switch>
+   </div>
   );
 }
 
