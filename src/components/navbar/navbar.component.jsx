@@ -18,15 +18,15 @@ import Link from '@material-ui/core/Link';
 
 //Styles
 
-import {OptionsContainer,OptionLink,StyledGrid,LogoDiv,Drawner,CenterText, SideButton} from './navbar.styles.jsx';
+import {OptionsContainer,OptionLink,StyledGrid,LogoDiv,Drawner,CenterText, SideButton, OptionDiv} from './navbar.styles.jsx';
 
 
 
 
- const Navbar = ({title,effect}) => {
+ const Navbar = ({title,parallax}) => {
   const [count, setCount] = useState(0);
   const [drawner, setdrawner] = useState(false);
-  console.log("El effect es : ",effect);
+  console.log("El effect es : ",parallax);
   const handleClick = () => {
     setdrawner(true);
     console.log("El valor es de : ",drawner);
@@ -68,9 +68,7 @@ return (
     <OptionLink>Cursos</OptionLink>
     <OptionLink>Alumnos</OptionLink>
     <OptionLink>Webinars</OptionLink>
-    <Link to="team">
-    <OptionLink >Equipo</OptionLink>
-    </Link>
+    <OptionLink>Equipo</OptionLink>
     <OptionLink >Ingresar</OptionLink>
 
     </CenterText>
@@ -85,7 +83,7 @@ return (
       <AppBar position="fixed" className="appbar"
       
     style={
-      (count<15) ? {'background':'transparent','transition':'0.4s'}:{'backgroundColor':'black','transition':'0.4s'}
+      ((count<15)&& parallax) ? {'background':'transparent','transition':'0.4s'}:{'backgroundColor':'black','transition':'0.4s'}
     }
 
         >
@@ -107,7 +105,7 @@ return (
           </Hidden>
           <LogoDiv>
           <Typography variant="h6" noWrap>
-            {title}
+            <OptionLink to="/">{title}</OptionLink>
           </Typography>
           </LogoDiv>
           <Hidden smDown>
@@ -116,10 +114,10 @@ return (
           justify="flex-end"
           alignItems="center">
           <OptionsContainer>
-          <OptionLink to="/team" >Cursos</OptionLink>
+          <OptionLink >Cursos</OptionLink>
           <OptionLink>Alumnos</OptionLink>
           <OptionLink>Webinars</OptionLink>
-          <OptionLink >Equipo</OptionLink>
+          <OptionLink to="/team"  >Equipo</OptionLink>
           <OptionLink >Ingresar</OptionLink>
           
 

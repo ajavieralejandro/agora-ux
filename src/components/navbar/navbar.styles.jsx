@@ -7,6 +7,9 @@ const OptionsContainerStyles = css`
   padding: 10px 15px;
   cursor: pointer;
   font-size : 20px;
+  text-decoration: none;
+  color : whitesmoke;
+  display: block;
   &:hover {
     transform: scale(1.5);
   }
@@ -24,6 +27,8 @@ export const LogoContainer = styled(Link)`
   height: 100%;
   width: 70px;
   padding: 25px;
+  text-decoration: none;
+
 `;
 
 export const OptionsContainer = styled.div`
@@ -38,6 +43,10 @@ export const OptionLink = styled(Link)`
   ${OptionsContainerStyles}
 `;
 
+export const OptionLinkDrawner = styled(Link)`
+${OptionsContainerStyles}
+`;
+
 export const OptionDiv = styled.div`
 ${OptionsContainerStyles}
 `;
@@ -45,9 +54,9 @@ ${OptionsContainerStyles}
 
 export const LogoDiv =  styled.div`
 margin: 2%;
-a:hover {
-    background-color: yellow;
-  }
+&:hover {
+  transform: scale(1.5);
+}
 
 `
 
@@ -58,7 +67,7 @@ export const StyledGrid = styled(Grid)`
 export const Drawner = styled.div`
 opacity:0.9;
 background-color:black;
-color: bisque;
+color: whitesmoke;
 position:fixed;
 width:100%;
 height:100%;
@@ -86,6 +95,9 @@ export const SideButton = styled.a`
   padding:8px 16px!important;
   position:absolute;right:0;
   top:0;
+  &:hover {
+    transform: scale(1.5);
+  }
 `
 
 

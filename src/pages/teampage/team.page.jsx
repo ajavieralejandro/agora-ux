@@ -1,5 +1,10 @@
 import React from 'react';
 import Navbar from '../../components/navbar/navbar.component';
+import Member from '../../components/member/member.component';
+import Container from '@material-ui/core/Container';
+
+import Grid from '@material-ui/core/Grid';
+
 import { Parallax} from 'react-parallax';
 
 import "./team.styles.scss";
@@ -13,25 +18,34 @@ const TeamPage = () =>{
   
   <Navbar title="Agora3d" />
 
-  <Parallax
-        className="parallax"
-        blur={{ min: -15, max: 15 }}
-        bgImage={process.env.PUBLIC_URL + '/assets/parallax.png'}
-        bgImageAlt="the dog"
-        strength={100}
-    >
-        <div style={{ height: '800px', width:'800px' }} />
 
-    </Parallax>
     
   </header>
     <div className="team-wrap">
-        <h1>Felicitaciones soy Team Page</h1>
+    <Container fixed>
 
-<h1>My First Heading</h1>
+    <Grid
+    container
+    direction="row"
+    justify="space-around"
+    alignItems="center"
+  >
+      
+      <Member />
+      <Member />
+      <Member />
+      <Member />
+      <Member />
+      <Member />
+      <Member />
+      <Member />
+      <Member />
+      <Member />
 
-<p>My first paragraph.</p>
+      </Grid>
+    </Container> 
     </div>
+    
     </div>
     );
     

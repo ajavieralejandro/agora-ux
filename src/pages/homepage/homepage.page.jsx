@@ -14,7 +14,7 @@ const HomePage  = (props) => {
         {/* -----basic config-----*/}
       
       
-      <Navbar title="Agora3d" />
+      <Navbar title="Agora3d" parallax={true} />
 
       <Parallax
             className="parallax"
