@@ -2,7 +2,6 @@ import styled, { css } from "styled-components";
 import { Typography } from "@material-ui/core";
 
 export const AvatarImg = styled.img`
-border-radius: 50%;
 width : 200px;
 display: block;
 margin-left: auto;

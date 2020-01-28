@@ -6,6 +6,7 @@ import { Parallax} from 'react-parallax';
 
 //Styles
 import './homepage.styles.scss';
+import CourseImages from '../../components/courseImages/course-images.component';
 
 const HomePage  = (props) => {
   return(
@@ -18,18 +19,25 @@ const HomePage  = (props) => {
 
       <Parallax
             className="parallax"
-            blur={{ min: -15, max: 15 }}
+            blur={{ min: -45, max: 15 }}
             bgImage={process.env.PUBLIC_URL + '/assets/parallax.png'}
             bgImageAlt="the dog"
-            strength={100}
+            strength={500}
         >
             <div style={{ height: '800px', width:'800px' }} />
+            <div className="centered">
+            </div>
+            
 
         </Parallax>
         
       </header>
 
-      </div>
+
+              <h1>Cursos Disponibles</h1>
+              <CourseImages />
+            </div>
+
       
     
       

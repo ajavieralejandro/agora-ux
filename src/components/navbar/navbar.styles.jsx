@@ -13,6 +13,8 @@ const OptionsContainerStyles = css`
   &:hover {
     transform: scale(1.5);
   }
+  font-family: 'Bangers', cursive;
+
 `;
 
 export const HeaderContainer = styled.div`
@@ -24,8 +26,8 @@ export const HeaderContainer = styled.div`
 `;
 
 export const LogoContainer = styled(Link)`
-  height: 100%;
-  width: 70px;
+  height: 80%;
+  width: 80%;
   padding: 25px;
   text-decoration: none;
 
@@ -54,9 +56,7 @@ ${OptionsContainerStyles}
 
 export const LogoDiv =  styled.div`
 margin: 2%;
-&:hover {
-  transform: scale(1.5);
-}
+
 
 `
 
