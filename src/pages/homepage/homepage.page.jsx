@@ -3,6 +3,7 @@ import React from 'react';
 
 import Navbar from "../../components/navbar/navbar.component";
 import { Parallax} from 'react-parallax';
+import CourseCard from "../../components/courseCard/course-card.component";
 
 //Styles
 import './homepage.styles.scss';
@@ -33,9 +34,13 @@ const HomePage  = (props) => {
         
       </header>
 
-
-              <h1>Cursos Disponibles</h1>
+              <div className="centered">
               <CourseImages />
+
+              </div>
+
+              <h1>hoasldkajflkasdfjlasdkf</h1>
+              <p>ajsdfasdkfjasdkjfhasdlkfjhasdfkjasdhfkasdfhsadkjfhasdkfjhasdkf</p>
             </div>
 
       
