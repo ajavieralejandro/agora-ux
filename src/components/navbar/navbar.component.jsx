@@ -54,7 +54,7 @@ import {OptionsContainer,OptionLink,StyledGrid,LogoDiv,Drawner,CenterText, SideB
 return (
     <div className="root">
 
-    <Fade in={drawner}>
+    <Fade in={drawner} timeout={100}>
     <div>
    
     <Drawner>
@@ -84,7 +84,7 @@ return (
       
     style={
       ((count<15)&& parallax) ? {'background':'transparent','transition':'0.4s'}:{'backgroundColor':'black','transition':'0.4s'}
-    }
+    } 
 
         >
         <Toolbar>

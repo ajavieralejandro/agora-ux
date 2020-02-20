@@ -1,0 +1,19 @@
+import styled from "styled-components";
+import { FaSearch} from "react-icons/fa";
+import TextField from '@material-ui/core/TextField';
+
+
+export const SearchContainer = styled.div`
+margin-left: auto;
+margin-right: auto;
+display: flex;
+
+
+
+`
+
+export const Search = styled(TextField)`
+width: 100%;
+
+`
+

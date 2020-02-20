@@ -11,9 +11,11 @@ const OptionsContainerStyles = css`
   color : whitesmoke;
   display: block;
   &:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
+    transition: 0.3s;
   }
-  font-family: 'Bangers', cursive;
+  font-family: 'Barlow', sans-serif;
+
 
 `;
 
@@ -65,7 +67,8 @@ export const StyledGrid = styled(Grid)`
 `
 
 export const Drawner = styled.div`
-opacity:0.9;
+opacity:0.99;
+transition : opacity 0.5s;
 background-color:black;
 color: whitesmoke;
 position:fixed;

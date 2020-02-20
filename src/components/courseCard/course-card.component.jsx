@@ -9,7 +9,7 @@ const courseCard = () => (
     <CourseCardContainer>
         <h1>Biomodelos</h1>
         <p> Aprende todo sobre biomodelos</p>
-        <FaClock></FaClock>
+        <FaClock/>
         <p>16hs</p>
         
     

@@ -1,5 +1,17 @@
 import React from 'react';
-//Components 
+//Components
+import Grid from '@material-ui/core/Grid';
+import SearchIcon from '@material-ui/icons/Search';
+import IconButton from '@material-ui/core/IconButton';
+import TextField from '@material-ui/core/TextField';
+import SearchButton from '../../components/search/search.component';
+import InputAdornment from '@material-ui/core/InputAdornment';
+import AccountCircle from '@material-ui/icons/AccountCircle';
+
+
+
+
+
 
 import Navbar from "../../components/navbar/navbar.component";
 import { Parallax} from 'react-parallax';
@@ -17,30 +29,36 @@ const HomePage  = (props) => {
       
       
       <Navbar title="Agora3d" parallax={true} />
-
       <Parallax
-            className="parallax"
-            blur={{ min: -45, max: 15 }}
-            bgImage={process.env.PUBLIC_URL + '/assets/parallax.png'}
-            bgImageAlt="the dog"
-            strength={500}
-        >
-            <div style={{ height: '800px', width:'800px' }} />
-            <div className="centered">
-            </div>
-            
+     
+      blur={{ min: -45, max: 15 }}
+      bgImage={process.env.PUBLIC_URL + '/assets/parallax.png'}
+      bgImageAlt="the dog"
+      strength={500}
+  >
+      <div style={{ height: '600px', width:'400px' }} />
+        <div className="centered">
+        <h1>Quéres aprender impresión 3D? </h1>
+        <p>Ofrecemos una variedad de curso dictados por expertos</p>
+         <SearchButton />
+        </div>
+     
+    
 
-        </Parallax>
+  </Parallax>
+  
         
       </header>
+            <div className="container">
 
-              <div className="centered">
-              <CourseImages />
 
-              </div>
+           
+             <CourseCard />
+             <CourseCard />
 
               <h1>hoasldkajflkasdfjlasdkf</h1>
               <p>ajsdfasdkfjasdkjfhasdlkfjhasdfkjasdhfkasdfhsadkjfhasdkfjhasdkf</p>
+              </div>
             </div>
 
       
