@@ -7,6 +7,11 @@ import TextField from '@material-ui/core/TextField';
 import SearchButton from '../../components/search/search.component';
 import InputAdornment from '@material-ui/core/InputAdornment';
 import AccountCircle from '@material-ui/icons/AccountCircle';
+import ParallaxDiv from '../../components/parallaxDiv/parallax-div.container';
+import Paper from '@material-ui/core/Paper';
+import {ContainerDiv} from '../../components/containerDiv/container-div.styles';
+import Member from '../../components/member/member.component';
+import Container from '@material-ui/core/Container';
 
 
 
@@ -27,8 +32,8 @@ const HomePage  = (props) => {
       <header className="App-header">
         {/* -----basic config-----*/}
       
-      
-      <Navbar title="Agora3d" parallax={true} />
+        <Container >
+
       <Parallax
      
       blur={{ min: -45, max: 15 }}
@@ -36,32 +41,23 @@ const HomePage  = (props) => {
       bgImageAlt="the dog"
       strength={500}
   >
-      <div style={{ height: '600px', width:'400px' }} />
-        <div className="centered">
-        <h1>Quéres aprender impresión 3D? </h1>
-        <p>Ofrecemos una variedad de curso dictados por expertos</p>
-         <SearchButton />
-        </div>
-     
-    
+      <div style={{ height: '400px', width:'600px' }} />
 
-  </Parallax>
+     
+      </Parallax>
+      </Container>
+
+     
   
         
       </header>
-            <div className="container">
-
-
-           
-             <CourseCard />
-             <CourseCard />
-
-              <h1>hoasldkajflkasdfjlasdkf</h1>
-              <p>ajsdfasdkfjasdkjfhasdlkfjhasdfkjasdhfkasdfhsadkjfhasdkfjhasdkf</p>
-              </div>
+      <Container >
+      <Member />
+      <Member />
+      <Member />
+      </Container>              
             </div>
 
-      
     
       
       

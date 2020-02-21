@@ -1,5 +1,7 @@
 import React from 'react';
 import Paper from '@material-ui/core/Paper';
+import Grid from '@material-ui/core/Grid';
+
 
 import { FaSearch} from "react-icons/fa";
 
@@ -10,16 +12,20 @@ import TextField from '@material-ui/core/TextField';
 const SearchButton = () => {
     let icon = <FaSearch />;
     return(
+      <SearchContainer>
         <Paper>
-        <SearchContainer>
+       
+      
+
+
         <Search id="filled-basic" label="Encontra tu curso" variant="filled" 
 
         InputProps={{
             endAdornment: icon
           }} />
-
-        </SearchContainer>
-        </Paper>
+          
+          </Paper>
+          </SearchContainer>
 
     )
 }

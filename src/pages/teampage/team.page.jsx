@@ -16,7 +16,6 @@ const TeamPage = () =>{
     {/* -----basic config-----*/}
   
   
-  <Navbar title="Agora3d" parallax="true" />
   <Parallax
   className="parallax"
   blur={{ min: -45, max: 15 }}

@@ -25,6 +25,7 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
+
 `;
 
 export const LogoContainer = styled(Link)`
@@ -64,6 +65,19 @@ margin: 2%;
 
 export const StyledGrid = styled(Grid)`
     margin-left : 10%
+`
+
+export const StyledDiv = styled.div`
+  width: 75%;
+  min-width : 200px;
+  margin-left : 5%;
+`
+
+export const StyledDiv2 = styled.div`
+width: 75%;
+min-width : 200px;
+margin-left : 5%;
+
 `
 
 export const Drawner = styled.div`

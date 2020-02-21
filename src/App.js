@@ -9,6 +9,7 @@ import TeamPage from './pages/teampage/team.page';
 function App() {
   return (
     <div className="app-wrapper">
+    <Navbar title="Agora3d" parallax={true} />
     <Switch>
       <Route exact path="/team" component={TeamPage} />
       <Route  path="/" component={HomePage} />

@@ -8,8 +8,7 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
 import Fade from '@material-ui/core/Fade';
-import Link from '@material-ui/core/Link';
-
+import SearchButton from '../search/search.component';
 
 
 
@@ -18,7 +17,7 @@ import Link from '@material-ui/core/Link';
 
 //Styles
 
-import {OptionsContainer,OptionLink,StyledGrid,LogoDiv,Drawner,CenterText, SideButton, OptionDiv} from './navbar.styles.jsx';
+import {OptionsContainer,OptionLink,StyledGrid,LogoDiv,Drawner,CenterText, SideButton, StyledDiv,StyledDiv2} from './navbar.styles.jsx';
 
 
 
@@ -83,7 +82,7 @@ return (
       <AppBar position="fixed" className="appbar"
       
     style={
-      ((count<15)&& parallax) ? {'background':'transparent','transition':'0.4s'}:{'backgroundColor':'black','transition':'0.4s'}
+      ((count<15)&& parallax) ? {'backgroundColor':'black','opacity':'0.7','transition':'0.4s'}:{'backgroundColor':'black','transition':'0.4s'}
     } 
 
         >
@@ -109,6 +108,8 @@ return (
           </Typography>
           </LogoDiv>
           <Hidden smDown>
+         
+         
           <StyledGrid container
           direction="row"
           justify="flex-end"
@@ -118,6 +119,9 @@ return (
           <OptionLink>Alumnos</OptionLink>
           <OptionLink>Webinars</OptionLink>
           <OptionLink to="/team"  >Equipo</OptionLink>
+          <StyledDiv>
+          <SearchButton />
+          </StyledDiv> 
           <OptionLink >Ingresar</OptionLink>
           
 
