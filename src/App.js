@@ -4,6 +4,7 @@ import './App.css';
 import { Switch, Route, Redirect } from "react-router-dom";
 import HomePage from './pages/homepage/homepage.page';
 import TeamPage from './pages/teampage/team.page';
+import Footer from './components/footer/footer.component';
 
 
 function App() {
@@ -15,6 +16,8 @@ function App() {
       <Route  path="/" component={HomePage} />
 
     </Switch>
+    <Footer />
+    
    </div>
   );
 }
