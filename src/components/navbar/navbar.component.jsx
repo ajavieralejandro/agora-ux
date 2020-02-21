@@ -9,7 +9,10 @@ import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
 import Fade from '@material-ui/core/Fade';
 import SearchButton from '../search/search.component';
+import Container from '@material-ui/core/Container';
 
+
+import Grid from '@material-ui/core/Grid';
 
 
 
@@ -88,6 +91,8 @@ return (
         >
         <Toolbar>
           <Hidden mdUp>
+          
+          
           <div onClick={handleClick}>
           <IconButton
           
@@ -101,32 +106,55 @@ return (
             <MenuIcon />
           </IconButton>
           </div>
-          </Hidden>
           <LogoDiv>
           <Typography variant="h6" noWrap>
             <OptionLink to="/">{title}</OptionLink>
           </Typography>
           </LogoDiv>
+          </Hidden>
+         
           <Hidden smDown>
-         
-         
-          <StyledGrid container
+          <Grid container>
+          <Grid
+          md={4}
+          container
           direction="row"
-          justify="flex-end"
-          alignItems="center">
-          <OptionsContainer>
-          <OptionLink >Cursos</OptionLink>
-          <OptionLink>Alumnos</OptionLink>
-          <OptionLink>Webinars</OptionLink>
-          <OptionLink to="/team"  >Equipo</OptionLink>
-          <StyledDiv>
-          <SearchButton />
-          </StyledDiv> 
-          <OptionLink >Ingresar</OptionLink>
-          
+          justify="flex-start"
+          alignItems="flex-end"
+        >
+          <LogoDiv>
+          <Typography variant="h6" noWrap>
+            <OptionLink to="/">{title}</OptionLink>
+          </Typography>
+          </LogoDiv>
+          </Grid>
 
-        </OptionsContainer>
-        </StyledGrid>
+         
+          <Grid md={4}
+          container
+          direction="row"
+          justify="center"
+          alignItems="flex-start"
+        >
+        <StyledDiv>
+          <SearchButton />
+          </StyledDiv>
+
+          </Grid>
+        
+
+          <Grid md={4}
+  container
+  direction="row"
+  justify="flex-end"
+  alignItems="flex-end"
+>
+
+          <OptionLink >Ingresar</OptionLink>
+          <OptionLink >Crear Cuenta</OptionLink>
+
+      </Grid>
+      </Grid>
         </Hidden>
         
          

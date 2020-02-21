@@ -9,7 +9,6 @@ import InputAdornment from '@material-ui/core/InputAdornment';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import ParallaxDiv from '../../components/parallaxDiv/parallax-div.container';
 import Paper from '@material-ui/core/Paper';
-import {ContainerDiv} from '../../components/containerDiv/container-div.styles';
 import Member from '../../components/member/member.component';
 import Container from '@material-ui/core/Container';
 
@@ -42,7 +41,9 @@ const HomePage  = (props) => {
       strength={500}
   >
       <div style={{ height: '400px', width:'600px' }} />
-
+      <div className="centered">
+        <h1>mucho más que una escuela online</h1>
+      </div>
      
       </Parallax>
       </Container>
@@ -52,9 +53,22 @@ const HomePage  = (props) => {
         
       </header>
       <Container >
+      <Grid
+      container
+      direction="row"
+      justify="space-around"
+      alignItems="center"
+      >
       <Member />
       <Member />
       <Member />
+      <Member />
+      <Member />
+      <Member />
+      <Member />
+      <Member />
+      <Member />
+      </Grid>
       </Container>              
             </div>
 
