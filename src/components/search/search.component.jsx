@@ -18,7 +18,10 @@ const SearchButton = () => {
       
 
 
-        <Search id="filled-basic" label="Encontra tu curso" variant="filled" 
+        <Search   id="filled-secondary"
+        label="Encontra tu curso"
+        variant="filled"
+        color="secondary"
 
         InputProps={{
             endAdornment: icon

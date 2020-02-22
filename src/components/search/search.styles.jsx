@@ -11,5 +11,6 @@ export const SearchContainer = styled.div`
 export const Search = styled(TextField)`
 width: 100%;
 height: 100%;
+color: white;
 `
 

@@ -11,6 +11,7 @@ import ParallaxDiv from '../../components/parallaxDiv/parallax-div.container';
 import Paper from '@material-ui/core/Paper';
 import Member from '../../components/member/member.component';
 import Container from '@material-ui/core/Container';
+import HomePageBody from '../../components/homePageBody/home-page-body.component';
 
 
 
@@ -52,24 +53,10 @@ const HomePage  = (props) => {
   
         
       </header>
-      <Container >
-      <Grid
-      container
-      direction="row"
-      justify="space-around"
-      alignItems="center"
-      >
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      </Grid>
-      </Container>              
+      <Container>
+      <HomePageBody />
+      </Container>
+     
             </div>
 
     

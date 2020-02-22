@@ -9,6 +9,8 @@ import Typography from '@material-ui/core/Typography';
 import Hidden from '@material-ui/core/Hidden';
 import Fade from '@material-ui/core/Fade';
 import SearchButton from '../search/search.component';
+import Button from '@material-ui/core/Button';
+
 import Container from '@material-ui/core/Container';
 
 
@@ -147,12 +149,12 @@ return (
   container
   direction="row"
   justify="flex-end"
-  alignItems="flex-end"
+  alignItems="center"
 >
 
-          <OptionLink >Ingresar</OptionLink>
-          <OptionLink >Crear Cuenta</OptionLink>
-
+<Button variant="contained" color="secondary">
+    Ingresar
+</Button>
       </Grid>
       </Grid>
         </Hidden>
