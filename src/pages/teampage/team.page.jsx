@@ -12,28 +12,7 @@ import "./team.styles.scss";
 const TeamPage = () =>{
     return(
     <div>
-    <header className="App-header">
-    {/* -----basic config-----*/}
-  
-  
-  <Parallax
-  className="parallax"
-  blur={{ min: -45, max: 15 }}
-  bgImage={process.env.PUBLIC_URL + '/assets/teamparallax.jpg'}
-  bgImageAlt="the dog"
-  strength={500}
->
-  <div style={{ height: '800px', width:'800px' }} />
-  <div className="centered">
-      <h1>Nuestro Equipo</h1>
-  </div>
-  
-
-</Parallax>
-
-
     
-  </header>
     <div className="team-wrap">
     <Container fixed>
     <h1>Nuestro Equipo </h1>

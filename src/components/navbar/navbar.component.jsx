@@ -138,9 +138,7 @@ return (
           justify="center"
           alignItems="flex-start"
         >
-        <StyledDiv>
-          <SearchButton />
-          </StyledDiv>
+        
 
           </Grid>
         

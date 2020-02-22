@@ -12,6 +12,8 @@ import Paper from '@material-ui/core/Paper';
 import Member from '../../components/member/member.component';
 import Container from '@material-ui/core/Container';
 import HomePageBody from '../../components/homePageBody/home-page-body.component';
+import Button from '@material-ui/core/Button';
+
 
 
 
@@ -32,22 +34,23 @@ const HomePage  = (props) => {
       <header className="App-header">
         {/* -----basic config-----*/}
       
-        <Container >
-
       <Parallax
      
       blur={{ min: -45, max: 15 }}
-      bgImage={process.env.PUBLIC_URL + '/assets/parallax.png'}
+      bgImage="https://lh3.googleusercontent.com/-vFnUrApIvRA/XlGwaSJjjII/AAAAAAAAFhg/ONyr3sahLfQnRsM1ddJShn2Yf1n1MR_9ACK8BGAsYHg/s0/2020-02-22.png"
       bgImageAlt="the dog"
       strength={500}
   >
-      <div style={{ height: '400px', width:'600px' }} />
+  
+      <div style={{ height: '800px', width:'600px' }} />
       <div className="centered">
         <h1>mucho más que una escuela online</h1>
+        <SearchButton />
+       
       </div>
      
       </Parallax>
-      </Container>
+
 
      
   
