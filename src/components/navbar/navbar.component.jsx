@@ -24,6 +24,7 @@ import Grid from '@material-ui/core/Grid';
 //Styles
 
 import {OptionsContainer,OptionLink,StyledGrid,LogoDiv,Drawner,CenterText, SideButton, StyledDiv,StyledDiv2} from './navbar.styles.jsx';
+import RegisterButton from '../registerButton/register-button.component';
 
 
 
@@ -151,11 +152,14 @@ return (
   alignItems="center"
 >
 
-<CartButton />
 
+<CartButton />
+<RegisterButton />
 <Button variant="contained" color="secondary">
     Ingresar
 </Button>
+
+
       </Grid>
       </Grid>
         </Hidden>

@@ -1,5 +1,5 @@
 import styled from "styled-components";
 
-export const ColorDiv = styled.div`
-background-color: coral;
+export const ButtonDiv = styled.div`
+margin-right: 2%;
 `
