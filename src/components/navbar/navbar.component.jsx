@@ -10,6 +10,7 @@ import Hidden from '@material-ui/core/Hidden';
 import Fade from '@material-ui/core/Fade';
 import SearchButton from '../search/search.component';
 import Button from '@material-ui/core/Button';
+import CartButton from '../cartButton/cartButton.component';
 
 import Container from '@material-ui/core/Container';
 
@@ -149,6 +150,8 @@ return (
   justify="flex-end"
   alignItems="center"
 >
+
+<CartButton />
 
 <Button variant="contained" color="secondary">
     Ingresar
