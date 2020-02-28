@@ -9,7 +9,7 @@ const FooterBody = () =>{
     return(
        
         <Container fixed>
-        <h1>Agora3D</h1>
+        <h1>Agora3d</h1>
             <Grid container spacing={1}>
                 <Grid   item md={4} xs={12}>
                 
@@ -18,7 +18,6 @@ const FooterBody = () =>{
                 direction="row"
                 justify="center"
                 alignItems="center"
-                spacing={4}
                 >
                     <dl>
                     <DT>Coffee</DT>

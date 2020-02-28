@@ -4,6 +4,7 @@ import Member from '../member/member.component';
 import {Wrap,Title,StyledImage} from './home-page-body.style';
 import SearchButton from '../search/search.component';
 import { FaDelicious } from "react-icons/fa";
+import Container from '@material-ui/core/Container';
 
 import Paper from '@material-ui/core/Paper';
 
@@ -16,11 +17,14 @@ const HomePageBody = () => {
         <p>Escuela lationamericana de biomodelos</p>
         <Grid container spacing={4}>
         <Grid item xs={12} md={4}> 
+        <Container>
         <h1>Hola soy una prueba</h1>
         <hr />
         <h1>Nuestro Equipo</h1>
         <hr />
-        </Grid> <Grid item xs={12} md={8} container
+        </Container>
+        </Grid>
+         <Grid item xs={12} md={8} container
         direction="row"
         justify="center"
         alignItems="center"

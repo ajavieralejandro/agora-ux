@@ -19,6 +19,8 @@ export const DeliciousIcon  = styled(FaDelicious)`
 `
 
 export const StyledImage = styled.img`
-    max-width: 79%;
-    max-heigth:  90%;
+    max-width: 100%;
+    max-heigth:  100%;
 `
+
+
