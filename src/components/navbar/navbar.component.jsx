@@ -89,7 +89,7 @@ return (
       <AppBar position="fixed" className="appbar"
       
     style={
-      ((count<15)&& parallax) ? {'backgroundColor':'black','opacity':'0.7','transition':'0.4s'}:{'backgroundColor':'black','transition':'0.4s'}
+      ((count<15)&& parallax) ? {'backgroundColor':'black','opacity':'0.85','transition':'0.4s'}:{'backgroundColor':'black','transition':'0.4s'}
     } 
 
         >
@@ -148,7 +148,6 @@ return (
         
 
           <Grid md={4}
-          item
   container
   direction="row"
   justify="flex-end"
