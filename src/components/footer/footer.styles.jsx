@@ -26,3 +26,13 @@ export const FooterContainer =  styled.div`
     margin-top: 15%;
 `
 
+export const DT = styled.dt`
+    text-decoration: underline;
+`
+
+export const DD = styled.dd`
+    margin: 0;
+    padding: 0 0 0.5em 0;
+`
+
+
