@@ -13,7 +13,7 @@ width: 100%;
 `
 
 export const BackDiv = styled.div`
-    background-color: black;
+    background-color: white;
     margin-top: 5%;
     width: 100%,
     

@@ -4,11 +4,12 @@ import { FaFacebook } from 'react-icons/fa';
 
 
 const FooterIcons = () => {
-    const facebookIcon = IconButton("facebook",FaFacebook);
-    console.log("facebook icon es :",facebookIcon);
+    const FacebookIcon = IconButton(FaFacebook);
+    console.log("facebook icon es :",FacebookIcon);
     return(
         <div>
-            <h1>Hola, se supone que tengo que estar renderizando el objeto</h1>
+            <h1>Hola, se supone que tengo que estar renderizando el objeto: </h1>
+            <FacebookIcon />
         </div>
     )    
 

@@ -1,9 +1,10 @@
 import React from 'react';
 import {default as WrappedIcon} from '@material-ui/core/IconButton';
-const IconButton = (label,icon) =>{
+const IconButton = (Icon) => () =>{
+    console.log("estoy recibiendo :",Icon);
     return(
-    <WrappedIcon aria-label={label}>
-        {icon}
+    <WrappedIcon aria-label="icon">
+        <Icon />
     </WrappedIcon>
     );
 }

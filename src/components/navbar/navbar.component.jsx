@@ -120,6 +120,7 @@ return (
           <Hidden smDown>
           <Grid container>
           <Grid
+          item
           md={4}
           container
           direction="row"
@@ -135,6 +136,7 @@ return (
 
          
           <Grid md={4}
+          item
           container
           direction="row"
           justify="center"
@@ -146,6 +148,7 @@ return (
         
 
           <Grid md={4}
+          item
   container
   direction="row"
   justify="flex-end"
