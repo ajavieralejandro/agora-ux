@@ -1,6 +1,7 @@
 import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Container from '@material-ui/core/Container';
+import FooterIcons from './footerIcons/footer-icons.component';
 
 import {FooterDiv,FooterContainer,BackDiv} from './footer.styles';
 const Footer = () =>{
@@ -17,7 +18,7 @@ const Footer = () =>{
                     <h1>hola soy una prueba</h1>
                     </Grid>
                     <Grid container item xs={12} md={4}  spacing={3}>
-                    <h1>hola soy una prueba</h1>
+                    <FooterIcons />
                     </Grid>                
                 </Grid>
                 </Container>    

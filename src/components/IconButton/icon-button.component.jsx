@@ -1,8 +1,10 @@
 import React from 'react';
-import IconButton from '@material-ui/core/IconButton';
+import {default as WrappedIcon} from '@material-ui/core/IconButton';
 const IconButton = (label,icon) =>{
-    <IconButton aria-label={label}>
+    return(
+    <WrappedIcon aria-label={label}>
         {icon}
-    </IconButton>
+    </WrappedIcon>
+    );
 }
-export const IconButton
+export default IconButton
