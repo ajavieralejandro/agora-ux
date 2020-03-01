@@ -136,22 +136,11 @@ return (
 
          
           <Grid md={4}
-          item
           container
           direction="row"
           justify="center"
-          alignItems="flex-start"
-        >
-        <OptionLink to="/">Cursos</OptionLink>
-        <OptionLink to="/">Webinars</OptionLink>
-        <OptionLink to="/">Proyectos</OptionLink>
-        <OptionLink to="/">Equipo</OptionLink>
-
-
-
-
-        
-
+          alignItems="center"
+          >
           </Grid>
         
 

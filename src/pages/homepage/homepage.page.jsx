@@ -3,6 +3,7 @@ import React from 'react';
 import SearchButton from '../../components/search/search.component';
 import Container from '@material-ui/core/Container';
 import HomePageBody from '../../components/homePageBody/home-page-body.component';
+import CourseCard from '../../components/courseCard/course-card.component';
 import { Parallax} from 'react-parallax';
 //Styles
 import { InsideParallaxDiv, ParallaxImageDiv, Header } from './homepage.styles';

@@ -1,44 +1,26 @@
 import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
-import  {AvatarImg,CardTitle,Wrapper} from './member.styles';
-const useStyles = makeStyles({
-  card: {
-    maxWidth: 345,
-  }
-});
+import { Card, Icon, Image } from 'semantic-ui-react'
+
 
 const Member = () => {
-  const classes = useStyles();
 
   return (
-    <Wrapper>
-    <Card className={classes.card}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-        />
-        <AvatarImg src="https://www.w3schools.com/howto/img_avatar.png" />
-
-        <CardContent>
-          <CardTitle gutterBottom variant="h5" component="h2">
-            Lizard
-          </CardTitle>
-          <Typography variant="body2" color="textSecondary" component="p">
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-  
-    </Card>
-    </Wrapper>
+    <Card>
+    <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
+    <Card.Content>
+      <Card.Header>Daniel</Card.Header>
+      <Card.Meta>Joined in 2016</Card.Meta>
+      <Card.Description>
+        Daniel is a comedian living in Nashville.
+      </Card.Description>
+    </Card.Content>
+    <Card.Content extra>
+      <a>
+        <Icon name='user' />
+        10 Friends
+      </a>
+    </Card.Content>
+  </Card>
   );
 }
 

@@ -2,9 +2,11 @@ import React from 'react';
 import Grid from '@material-ui/core/Grid';
 import Member from '../member/member.component';
 import {Wrap,Title,StyledImage} from './home-page-body.style';
+import CourseImage from '../courseCard/course-card.component';
 import SearchButton from '../search/search.component';
 import { FaDelicious } from "react-icons/fa";
 import Container from '@material-ui/core/Container';
+import CourseCard from '../courseCard/course-card.component';
 
 import Paper from '@material-ui/core/Paper';
 
@@ -30,11 +32,7 @@ const HomePageBody = () => {
         alignItems="center"
         spacing={1}
       >
-
-      <StyledImage src="https://cdn.computerhoy.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2015/11/131579-objetos-mas-sorprendentes-hechos-impresora-3d.jpg?itok=KNNEPm_Z" alt="Italian Trulli" />
-
-
-     
+        <CourseCard />
         </Grid>
 
         </Grid>
