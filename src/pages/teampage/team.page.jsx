@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import Navbar from '../../components/navbar/navbar.component';
-import {setTeam} from '../../redux/collections/collection.actions';
+import {setTeam,fetchTeam} from '../../redux/collections/collection.actions';
 import Member from '../../components/member/member.component';
 import Container from '@material-ui/core/Container';
 import { connect } from "react-redux";
@@ -13,12 +13,12 @@ import { Parallax} from 'react-parallax';
 import "./team.styles.scss";
 import { dispatch } from 'rxjs/internal/observable/pairs';
 
-const TeamPage = ({team,setTeam}) =>{
+const TeamPage = ({team,fetchTeam}) =>{
 
   useEffect(() => {
     console.log("Estoy por pedirle que empiece la saga");
     console.log("El estado es : ",team);
-    setTeam("hola");
+    fetchTeam();
   }, [])
 
     return(
@@ -62,7 +62,8 @@ const mapStateToProps = state => ({
 })
 
 const mapDispatchToProps = dispatch  =>({
-  setTeam : (team) => dispatch(setTeam(team))
+  setTeam : (team) => dispatch(setTeam(team)),
+  fetchTeam : () => dispatch(fetchTeam())
 })
 
 
