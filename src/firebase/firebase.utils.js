@@ -27,7 +27,7 @@ const firebaseConfig = {
   export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
 
-  //Necesita si o si trabajar con async y await... 
+  //Necesita si o si trabajar con async y await...  
   export const getTeam = async ()=>{
     const toR = [];
     let teamsRef = await firestore.collection('team');

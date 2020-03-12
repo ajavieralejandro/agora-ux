@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import Navbar from '../../components/navbar/navbar.component';
+import {Spinner} from '../../components/withSpinner/with-spinner.component';
 import {setTeam,fetchTeam} from '../../redux/collections/collection.actions';
 import Member from '../../components/member/member.component';
 import Container from '@material-ui/core/Container';
@@ -47,8 +48,9 @@ const TeamPage = ({team,fetchTeam,loading}) =>{
     direction="row"
     justify="space-around"
     alignItems="center"
+    spacing={2}
   >
-      {(!loading)?team.map(member => <Member teamMember={member} />):<h1>Soy null</h1>}      
+      {(!loading)?team.map(member => <Grid item md={3}><Member teamMember={member}/></Grid>):<Spinner />}      
       </Grid>
     </Container> 
     </div>
