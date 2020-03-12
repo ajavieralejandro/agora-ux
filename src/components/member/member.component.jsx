@@ -1,17 +1,19 @@
 import React from 'react';
 import { Card, Icon, Image } from 'semantic-ui-react'
+import {Wrapper} from './member.styles';
 
+const Member = ({teamMember}) => {
 
-const Member = () => {
+  const {img,nombre,apellido,rol,bio} = teamMember;
 
   return (
     <Card>
-    <Image src='https://react.semantic-ui.com/images/avatar/large/daniel.jpg' wrapped ui={false} />
+    <Image src={img}  wrapped ui={false} />
     <Card.Content>
-      <Card.Header>Daniel</Card.Header>
-      <Card.Meta>Joined in 2016</Card.Meta>
+      <Card.Header>{apellido} {nombre}</Card.Header>
+      <Card.Meta>{rol}</Card.Meta>
       <Card.Description>
-        Daniel is a comedian living in Nashville.
+        bio: {bio}
       </Card.Description>
     </Card.Content>
     <Card.Content extra>

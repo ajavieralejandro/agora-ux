@@ -8,3 +8,8 @@ export const setTeam = (team) =>({
 export const fetchTeam = () =>({
     type: CollectionActionTypes.FETCH_TEAM_START
 })
+
+export const fetchTeamError = (error)=>({
+    type: CollectionActionTypes.FETCH_TEAM_ERROR,
+    payload : error
+})

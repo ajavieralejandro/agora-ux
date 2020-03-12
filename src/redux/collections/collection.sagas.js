@@ -1,5 +1,5 @@
 import CollectionActionTypes from './collection.types';
-import {setTeam} from './collection.actions';
+import {setTeam, fetchTeamError} from './collection.actions';
 import {all, call,takeLatest, put} from 'redux-saga/effects';
 import {firestore,getTeam} from '../../firebase/firebase.utils';
 
@@ -7,16 +7,17 @@ import {firestore,getTeam} from '../../firebase/firebase.utils';
 export function* fetchTeam(){
     try{
         
-        const snapshot = yield getTeam();
-        console.log("Estoy trayendo : ",snapshot);
+        const team = yield getTeam();
+        console.log("Estoy trayendo : ",team);
+        yield put(setTeam(team));
         
     }
     catch(error){
-        console.log("UPS...something went wrong");
-    }
-    yield console.log("Tengo que traer la información del servidor...");
-    yield put(setTeam("success"));
+        yield put(fetchTeamError(error));
+        
 
+    }
+   
 }
 
 export function* onFetchTeamStart(){

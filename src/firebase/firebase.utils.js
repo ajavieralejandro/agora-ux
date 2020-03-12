@@ -27,19 +27,21 @@ const firebaseConfig = {
   export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
 
-  export const getTeam = ()=>{
-    let toR = [];
-    let teamsRef = firestore.collection('team');
-    teamsRef.get()
-    .then(snapshot => {
+  //Necesita si o si trabajar con async y await... 
+  export const getTeam = async ()=>{
+    const toR = [];
+    let teamsRef = await firestore.collection('team');
+    await teamsRef.get()
+    .then(snapshot => 
       snapshot.forEach(doc => {
         const {apellido,nombre,img,bio,rol} = doc.data();
-        toR.push({apellido,nombre,img,bio,rol})
-      });
-    })
+        toR.push({'apellido':apellido,'nombre':nombre,'img':img,'bio':bio,'rol':rol})
+      })
+    )
     .catch(err => {
       console.log('Error getting documents', err);
     });
+    console.log("Estoy retornando : ",toR);
 
     return toR; 
   }

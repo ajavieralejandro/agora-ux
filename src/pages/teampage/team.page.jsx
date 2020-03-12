@@ -13,13 +13,26 @@ import { Parallax} from 'react-parallax';
 import "./team.styles.scss";
 import { dispatch } from 'rxjs/internal/observable/pairs';
 
-const TeamPage = ({team,fetchTeam}) =>{
-
+const TeamPage = ({team,fetchTeam,loading}) =>{
+  const array = [1,2,3];
+ //Analogo a componentDidMount
   useEffect(() => {
-    console.log("Estoy por pedirle que empiece la saga");
-    console.log("El estado es : ",team);
+    console.log("Loading es : ",loading);
+    if(team.length===0)
     fetchTeam();
   }, [])
+
+  useEffect(()=>{
+    console.log("Las diferencias : ");
+    console.log("team ahora es : ",team);
+    if(team)
+    team.forEach(member => console.log("miembro : ",member));
+
+  },[loading]);
+
+
+  
+
 
     return(
     <div>
@@ -35,18 +48,7 @@ const TeamPage = ({team,fetchTeam}) =>{
     justify="space-around"
     alignItems="center"
   >
-      
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-      <Member />
-
+      {(!loading)?team.map(member => <Member teamMember={member} />):<h1>Soy null</h1>}      
       </Grid>
     </Container> 
     </div>
@@ -58,7 +60,8 @@ const TeamPage = ({team,fetchTeam}) =>{
 }
 
 const mapStateToProps = state => ({
-   team : state.team
+   team : state.team.team,
+   loading : state.team.loading
 })
 
 const mapDispatchToProps = dispatch  =>({

@@ -1,5 +1,6 @@
 import styled, { css } from "styled-components";
 import { Typography } from "@material-ui/core";
+import { Card, Icon, Image } from 'semantic-ui-react'
 
 export const AvatarImg = styled.img`
 width : 200px;
@@ -15,10 +16,12 @@ border-color: black;
 
 `
 
+
 export const CardTitle = styled(Typography)`
 text-align: center;
 `
 
 export const Wrapper = styled.div`
-    margin-top : 2%;
+max-width: 130px;
+max-height: 150px;
 `
