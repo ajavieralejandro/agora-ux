@@ -26,4 +26,22 @@ const firebaseConfig = {
   provider.setCustomParameters({prompt : 'select account'});
   export const signInWithGoogle = () => auth.signInWithPopup(provider);
 
+
+  export const getTeam = ()=>{
+    let toR = [];
+    let teamsRef = firestore.collection('team');
+    teamsRef.get()
+    .then(snapshot => {
+      snapshot.forEach(doc => {
+        const {apellido,nombre,img,bio,rol} = doc.data();
+        toR.push({apellido,nombre,img,bio,rol})
+      });
+    })
+    .catch(err => {
+      console.log('Error getting documents', err);
+    });
+
+    return toR; 
+  }
+
   export default firebase;
