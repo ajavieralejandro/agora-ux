@@ -1,5 +1,3 @@
-
-import {ButtonDiv} from '../cartButton/cartButton.styles';
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -31,19 +29,12 @@ const useStyles = makeStyles(theme => ({
   },
 }));
 
-export default function RegisterButton() {
+export default function SignInDialog(open,handleClose) {
+    console.log("Estoy recibiendo de abierto : ",open);
   const classes = useStyles();
-  const [open, setOpen] = React.useState(false);
   const [fullWidth, setFullWidth] = React.useState(true);
   const [maxWidth, setMaxWidth] = React.useState('sm');
 
-  const handleClickOpen = () => {
-    setOpen(true);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
 
   const handleMaxWidthChange = event => {
     setMaxWidth(event.target.value);
@@ -55,11 +46,6 @@ export default function RegisterButton() {
 
   return (
     <React.Fragment>
-    <ButtonDiv>
-    <Button onClick={handleClickOpen}  variant="outlined" color="secondary">
-        Registrate
-    </Button>
-    </ButtonDiv>
       <Dialog
         fullWidth={fullWidth}
         maxWidth={maxWidth}
