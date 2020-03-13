@@ -8,12 +8,10 @@ import DialogActions from '@material-ui/core/DialogActions';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
-import FormControl from '@material-ui/core/FormControl';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';
-import Switch from '@material-ui/core/Switch';
+import RegisterBody from '../registerBody/register-body.component';
+
+//Experimento
+import {StyledGrid} from '../registerBody/register-body.styles';
 
 const useStyles = makeStyles(theme => ({
   form: {
@@ -67,45 +65,11 @@ export default function RegisterButton() {
         onClose={handleClose}
         aria-labelledby="max-width-dialog-title"
       >
-        <DialogTitle id="max-width-dialog-title">Optional sizes</DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            You can set my maximum width and whether to adapt or not.
-          </DialogContentText>
-          <form className={classes.form} noValidate>
-            <FormControl className={classes.formControl}>
-              <InputLabel htmlFor="max-width">maxWidth</InputLabel>
-              <Select
-                autoFocus
-                value={maxWidth}
-                onChange={handleMaxWidthChange}
-                inputProps={{
-                  name: 'max-width',
-                  id: 'max-width',
-                }}
-              >
-                <MenuItem value={false}>false</MenuItem>
-                <MenuItem value="xs">xs</MenuItem>
-                <MenuItem value="sm">sm</MenuItem>
-                <MenuItem value="md">md</MenuItem>
-                <MenuItem value="lg">lg</MenuItem>
-                <MenuItem value="xl">xl</MenuItem>
-              </Select>
-            </FormControl>
-            <FormControlLabel
-              className={classes.formControlLabel}
-              control={
-                <Switch checked={fullWidth} onChange={handleFullWidthChange} value="fullWidth" />
-              }
-              label="Full width"
-            />
-          </form>
+        <StyledGrid container>
+            <RegisterBody />
+        </StyledGrid>
         </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Close
-          </Button>
-        </DialogActions>
       </Dialog>
     </React.Fragment>
   );

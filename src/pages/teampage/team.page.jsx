@@ -46,7 +46,7 @@ const TeamPage = ({team,fetchTeam,loading}) =>{
     <Grid
     container
     direction="row"
-    justify="space-around"
+    justify="flex-start"
     alignItems="center"
     spacing={2}
   >
