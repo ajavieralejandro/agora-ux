@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import SignIn from '../../components/signIn/signIn.component';
 import Grid from '@material-ui/core/Grid';
-import {PageWrapper} from './signpage.styles';
+import {PageWrapper,RegisterButton} from './signpage.styles';
 
 const SignPage = () => {
 
@@ -13,13 +13,12 @@ const SignPage = () => {
         justify="center"
         alignItems="center"
         >
-            <Grid item xs={12} md={6}>
-                <SignIn />
-            </Grid>
-            <Grid item xs={12} md={6}>
+   
+            <Grid item xs={12} md={12}>
                 <SignIn />
             </Grid>
         </Grid>
+
         </PageWrapper>
     )
 }

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import Navbar from '../../components/navbar/navbar.component';
 import {Spinner} from '../../components/withSpinner/with-spinner.component';
 import {setTeam,fetchTeam} from '../../redux/collections/collection.actions';
 import Member from '../../components/member/member.component';
