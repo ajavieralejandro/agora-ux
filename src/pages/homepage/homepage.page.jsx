@@ -4,6 +4,7 @@ import SearchButton from '../../components/search/search.component';
 import Container from '@material-ui/core/Container';
 import HomePageBody from '../../components/homePageBody/home-page-body.component';
 import CourseCard from '../../components/courseCard/course-card.component';
+import ImageGrid from '../../components/imageGrid/image-grid.component';
 import { Parallax} from 'react-parallax';
 //Styles
 import { InsideParallaxDiv, ParallaxImageDiv, Header } from './homepage.styles';
@@ -29,6 +30,8 @@ const HomePage  = (props) => {
       <Container>
       <HomePageBody />
       </Container>
+      <ImageGrid />
+
      
             </div>
 
