@@ -21,7 +21,6 @@ const CoursePage = () => {
                 <p>Impresion 3d</p>
                 <p>Diseño Web</p>
                 <p>Biomodelos</p>
-                <hr />
               </div>
             </Grid>
           </Grid>

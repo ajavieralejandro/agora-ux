@@ -8,26 +8,19 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Hidden from "@material-ui/core/Hidden";
 import Fade from "@material-ui/core/Fade";
-import SearchButton from "../search/search.component";
 import Button from "@material-ui/core/Button";
 import CartButton from "../cartButton/cartButton.component";
-
-import Container from "@material-ui/core/Container";
 
 import Grid from "@material-ui/core/Grid";
 
 //Styles
 
 import {
-  OptionsContainer,
   OptionLink,
-  StyledGrid,
   LogoDiv,
   Drawner,
   CenterText,
-  SideButton,
-  StyledDiv,
-  StyledDiv2
+  SideButton
 } from "./navbar.styles.jsx";
 import RegisterButton from "../registerButton/register-button.component";
 
@@ -136,6 +129,7 @@ const Navbar = ({ title, parallax }) => {
                 >
                   <OptionLink>Cursos</OptionLink>
                   <OptionLink>Proyectos</OptionLink>
+                  <OptionLink to="/team">Equipo</OptionLink>
                   <OptionLink>Webinars</OptionLink>
                 </Grid>
 
