@@ -1,5 +1,6 @@
 import React from "react";
 import Grid from "@material-ui/core/Grid";
+import BodySection1 from "../BodySection1/body-section-1.component";
 import Member from "../member/member.component";
 import { Wrap, Title, StyledImage } from "./home-page-body.style";
 import CourseImage from "../courseCard/course-card.component";
@@ -15,31 +16,9 @@ const HomePageBody = () => {
     <React.Fragment>
       <Wrap>
         <Title>Agora3D</Title>
-        <FaDelicious size={44} />
         <p>Escuela lationamericana de biomodelos</p>
-        <Grid container spacing={4}>
-          <Grid item xs={12} md={4}>
-            <Container>
-              <h1>Hola soy una prueba</h1>
-              <hr />
-              <h1>Nuestro Equipo</h1>
-              <hr />
-            </Container>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            md={8}
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={1}
-          >
-            <CourseCard />
-          </Grid>
-        </Grid>
       </Wrap>
+      <BodySection1 />
     </React.Fragment>
   );
 };
