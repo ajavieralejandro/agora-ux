@@ -1,19 +1,14 @@
 import React from "react";
-import Grid from "@material-ui/core/Grid";
-import BodySection1 from "../BodySection1/body-section-1.component";
-import Member from "../member/member.component";
-import { Wrap, Title, StyledImage } from "./home-page-body.style";
-import CourseImage from "../courseCard/course-card.component";
-import SearchButton from "../search/search.component";
-import { FaDelicious } from "react-icons/fa";
-import Container from "@material-ui/core/Container";
-import CourseCard from "../courseCard/course-card.component";
-
-import Paper from "@material-ui/core/Paper";
+import BodySection1 from "./BodySection1/body-section-1.component";
+import BodySection2 from "./BodySection2/body-section-2.component";
+import { Wrap, Wrap2, Title } from "./home-page-body.style";
 
 const HomePageBody = () => {
   return (
     <React.Fragment>
+      <Wrap2>
+        <BodySection2 />
+      </Wrap2>
       <Wrap>
         <Title>Agora3D</Title>
         <p>Escuela lationamericana de biomodelos</p>
