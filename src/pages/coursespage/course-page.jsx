@@ -3,7 +3,7 @@ import Container from "@material-ui/core/Container";
 import Grid from "@material-ui/core/Grid";
 import { PageWrapper } from "../signpage/signpage.styles";
 
-const CoursePage = () => {
+const CoursesPage = () => {
   return (
     <PageWrapper>
       <Container>
@@ -31,4 +31,4 @@ const CoursePage = () => {
   );
 };
 
-export default CoursePage;
+export default CoursesPage;

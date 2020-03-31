@@ -6,7 +6,8 @@ import HomePage from "./pages/homepage/homepage.page";
 import TeamPage from "./pages/teampage/team.page";
 import Footer from "./components/footer/footer.component";
 import SignPage from "./pages/signpage/signpage.page";
-import CoursePage from "./pages/coursespage/course-page";
+import CoursesPage from "./pages/coursespage/course-page";
+import CoursePage from "./pages/coursepage/coursepage.page";
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
       <Switch>
         <Route exact path="/team" component={TeamPage} />
         <Route exact path="/sign" component={SignPage} />
-        <Route exact path="/cursos" component={CoursePage} />
+        <Route exact path="/cursos" component={CoursesPage} />
+        <Route exact path="/curso" component={CoursePage} />
         <Route path="/" component={HomePage} />
       </Switch>
       <Footer />
