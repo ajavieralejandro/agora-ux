@@ -8,26 +8,29 @@ import { GoGraph } from "react-icons/go";
 import {
   StyledPaper,
   Wrap,
+  Wrap2,
   StyledUl,
   StyledLi,
-  Space
+  Space,
+  Price,
+  StyledPrice
 } from "./buy-course-card.styles";
 import CartButton2 from "../cartButton2/cartButton2.component";
 
 const BuyCourseCard = () => {
   return (
-    <Wrap>
-      <StyledPaper elevation={3}>
+    <StyledPaper elevation={3}>
+      <Wrap>
         <Container>
           <StyledUl>
-            <StyledLi>
-              <TiDocument />
-              <Space>17 Documentos</Space>
-            </StyledLi>
+            <StyledPrice>
+              <Price>$1200</Price>
+            </StyledPrice>
             <StyledLi>
               <FaCertificate />
               <Space>Certificado de finalización</Space>
             </StyledLi>
+
             <StyledLi>
               <TiDocument />
               <Space>Bibliografía exclusiva</Space>
@@ -55,8 +58,8 @@ const BuyCourseCard = () => {
           </StyledUl>
           <CartButton2 />
         </Container>
-      </StyledPaper>
-    </Wrap>
+      </Wrap>
+    </StyledPaper>
   );
 };
 

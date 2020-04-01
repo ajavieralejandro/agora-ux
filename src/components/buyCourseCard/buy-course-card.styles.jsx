@@ -13,7 +13,6 @@ export const StyledUl = styled.ul`
   font-size: 15px;
   padding-left: 0;
   float: left;
-  margin-top: 15px;
   margin-right: 50px;
 `;
 
@@ -22,7 +21,13 @@ export const StyledLi = styled.li`
   margin-top: 5%;
 `;
 
+export const StyledPrice = styled.li`
+  margin-left: 65%;
+`;
+
 export const Space = styled.div`
   margin-left: 15%;
   margin-top: -12%;
 `;
+
+export const Price = styled.h2``;
