@@ -1,14 +1,13 @@
-import React from "react";
-import IconButton from "@material-ui/core/IconButton";
-import { FiShoppingCart } from "react-icons/fi";
+import Button from "@material-ui/core/Button";
+import styled from "styled-components";
 
-const CartButton2 = () => {
-  return (
-    <IconButton color="primary">
-      Comprar
-      <FiShoppingCart />
-    </IconButton>
-  );
-};
+export const StyledButton = styled(Button)`
+  width: 100%;
+  font-size: 35px;
+  margin-top: 200px;
+  background-color: #575a69;
+`;
 
-export default CartButton2;
+export const Wrap = styled.div`
+  margin-top: 15%;
+`;

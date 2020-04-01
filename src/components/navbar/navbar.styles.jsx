@@ -1,22 +1,19 @@
-import Grid from '@material-ui/core/Grid';
+import Grid from "@material-ui/core/Grid";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
-
 
 const OptionsContainerStyles = css`
   padding: 10px 15px;
   cursor: pointer;
-  font-size : 20px;
+  font-size: 17px;
   text-decoration: none;
-  color : whitesmoke;
+  color: whitesmoke;
   display: block;
   &:hover {
     transform: scale(1.2);
     transition: 0.3s;
   }
-  font-family: 'Barlow', sans-serif;
-
-
+  font-family: "Barlow", sans-serif;
 `;
 
 export const HeaderContainer = styled.div`
@@ -25,7 +22,6 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-
 `;
 
 export const LogoContainer = styled(Link)`
@@ -33,7 +29,6 @@ export const LogoContainer = styled(Link)`
   width: 80%;
   padding: 25px;
   text-decoration: none;
-
 `;
 
 export const OptionsContainer = styled.div`
@@ -42,6 +37,7 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  font-size: 16px;
 `;
 
 export const OptionLink = styled(Link)`
@@ -49,70 +45,70 @@ export const OptionLink = styled(Link)`
 `;
 
 export const OptionLinkDrawner = styled(Link)`
-${OptionsContainerStyles}
+  ${OptionsContainerStyles}
 `;
 
 export const OptionDiv = styled.div`
-${OptionsContainerStyles}
+  ${OptionsContainerStyles}
 `;
 
-
-export const LogoDiv =  styled.div`
-
-
-`
+export const LogoDiv = styled.div``;
 
 export const StyledGrid = styled(Grid)`
-    margin-left : 10%
-`
+  margin-left: 10%;
+`;
 
 export const StyledDiv = styled.div`
   width: 75%;
-  min-width : 200px;
-`
+  min-width: 200px;
+`;
 
 export const StyledDiv2 = styled.div`
-width: 75%;
-min-width : 200px;
-margin-left : 5%;
-
-`
+  width: 75%;
+  min-width: 200px;
+  margin-left: 5%;
+`;
 
 export const Drawner = styled.div`
-opacity:0.99;
-transition : opacity 0.5s;
-background-color:black;
-color: whitesmoke;
-position:fixed;
-width:100%;
-height:100%;
-top:0px;
-left:0px;
-z-index:1000;`
-
+  opacity: 0.99;
+  transition: opacity 0.5s;
+  background-color: black;
+  color: whitesmoke;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+`;
 
 export const CenterText = styled.div`
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-
-
-`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+`;
 
 export const SideButton = styled.a`
-  border:none;display:inline-block;padding:8px 16px;
-  vertical-align:middle;overflow:hidden;text-decoration:none;
-  color:inherit;background-color:inherit;text-align:center;cursor:pointer;
-  white-space:nowrap;
-  color:#fff!important;background-color:#000!important;
-  font-size:36px!important;
-  padding:8px 16px!important;
-  position:absolute;right:0;
-  top:0;
+  border: none;
+  display: inline-block;
+  padding: 8px 16px;
+  vertical-align: middle;
+  overflow: hidden;
+  text-decoration: none;
+  color: inherit;
+  background-color: inherit;
+  text-align: center;
+  cursor: pointer;
+  white-space: nowrap;
+  color: #fff !important;
+  background-color: #000 !important;
+  font-size: 16px !important;
+  padding: 8px 16px !important;
+  position: absolute;
+  right: 0;
+  top: 0;
   &:hover {
     transform: scale(1.5);
   }
-`
-
-
+`;

@@ -14,7 +14,7 @@ export const Title = styled.div`
 `;
 
 export const DeliciousIcon = styled(FaDelicious)`
-  font-size: 22ps;
+  font-size: 22px;
 `;
 
 export const StyledImage = styled.img`
