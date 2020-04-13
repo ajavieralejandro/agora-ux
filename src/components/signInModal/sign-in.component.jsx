@@ -1,98 +1,80 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import Button from '@material-ui/core/Button';
-import Dialog from '@material-ui/core/Dialog';
-import DialogActions from '@material-ui/core/DialogActions';
-import DialogContent from '@material-ui/core/DialogContent';
-import DialogContentText from '@material-ui/core/DialogContentText';
-import DialogTitle from '@material-ui/core/DialogTitle';
-import FormControl from '@material-ui/core/FormControl';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import Select from '@material-ui/core/Select';
-import Switch from '@material-ui/core/Switch';
+import React from "react";
+import Modal from "react-modal";
+import Button from "@material-ui/core/Button";
+import TextField from "@material-ui/core/TextField";
+import Grid from "@material-ui/core/Grid";
+import "./sign-in.styles.scss";
 
-const useStyles = makeStyles(theme => ({
-  form: {
-    display: 'flex',
-    flexDirection: 'column',
-    margin: 'auto',
-    width: 'fit-content',
-  },
-  formControl: {
-    marginTop: theme.spacing(2),
-    minWidth: 120,
-  },
-  formControlLabel: {
-    marginTop: theme.spacing(1),
-  },
-}));
+const customStyles = {
+  content: {
+    width: "500px",
+    top: "50%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)"
+  }
+};
 
-export default function SignInDialog(open,handleClose) {
-    console.log("Estoy recibiendo de abierto : ",open);
-  const classes = useStyles();
-  const [fullWidth, setFullWidth] = React.useState(true);
-  const [maxWidth, setMaxWidth] = React.useState('sm');
+const SignInModal = ({ open }) => {
+  var subtitle;
+  const [modalIsOpen, setIsOpen] = React.useState(false);
+  function openModal() {
+    setIsOpen(true);
+  }
 
+  function afterOpenModal() {
+    // references are now sync'd and can be accessed.
+    subtitle.style.color = "#f00";
+  }
 
-  const handleMaxWidthChange = event => {
-    setMaxWidth(event.target.value);
-  };
-
-  const handleFullWidthChange = event => {
-    setFullWidth(event.target.checked);
-  };
+  function closeModal() {
+    setIsOpen(false);
+  }
 
   return (
     <React.Fragment>
-      <Dialog
-        fullWidth={fullWidth}
-        maxWidth={maxWidth}
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="max-width-dialog-title"
+      <Button onClick={openModal} variant="contained" color="secondary">
+        Ingresar
+      </Button>
+      <Modal
+        isOpen={modalIsOpen}
+        onAfterOpen={afterOpenModal}
+        onRequestClose={closeModal}
+        style={customStyles}
+        contentLabel="Example Modal"
       >
-        <DialogTitle id="max-width-dialog-title">Optional sizes</DialogTitle>
-        <DialogContent>
-          <DialogContentText>
-            You can set my maximum width and whether to adapt or not.
-          </DialogContentText>
-          <form className={classes.form} noValidate>
-            <FormControl className={classes.formControl}>
-              <InputLabel htmlFor="max-width">maxWidth</InputLabel>
-              <Select
-                autoFocus
-                value={maxWidth}
-                onChange={handleMaxWidthChange}
-                inputProps={{
-                  name: 'max-width',
-                  id: 'max-width',
-                }}
-              >
-                <MenuItem value={false}>false</MenuItem>
-                <MenuItem value="xs">xs</MenuItem>
-                <MenuItem value="sm">sm</MenuItem>
-                <MenuItem value="md">md</MenuItem>
-                <MenuItem value="lg">lg</MenuItem>
-                <MenuItem value="xl">xl</MenuItem>
-              </Select>
-            </FormControl>
-            <FormControlLabel
-              className={classes.formControlLabel}
-              control={
-                <Switch checked={fullWidth} onChange={handleFullWidthChange} value="fullWidth" />
-              }
-              label="Full width"
+        <h2 ref={_subtitle => (subtitle = _subtitle)}>Hello</h2>
+        <button onClick={closeModal}>close</button>
+        <div>I am a modal</div>
+        <form>
+          <Grid
+            container
+            direction="column"
+            justify="center"
+            alignItems="center"
+          >
+            <TextField
+              className="text"
+              id="standard-basic"
+              label="Usuario o mail"
             />
-          </form>
-        </DialogContent>
-        <DialogActions>
-          <Button onClick={handleClose} color="primary">
-            Close
-          </Button>
-        </DialogActions>
-      </Dialog>
+            <TextField
+              className="text"
+              id="standard-password-input"
+              label="Password"
+              type="password"
+              autoComplete="current-password"
+            />
+            <Button variant="contained" color="secondary">
+              Ingresar
+            </Button>
+          </Grid>
+        </form>
+      </Modal>
     </React.Fragment>
   );
-}
+};
+
+export default SignInModal;

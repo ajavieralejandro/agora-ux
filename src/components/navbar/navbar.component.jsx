@@ -9,6 +9,10 @@ import Typography from "@material-ui/core/Typography";
 import Hidden from "@material-ui/core/Hidden";
 import Fade from "@material-ui/core/Fade";
 import Button from "@material-ui/core/Button";
+import SearchButton from "../../components/search/search.component";
+import DehazeIcon from "@material-ui/icons/Dehaze";
+
+import SignInModal from "../signInModal/sign-in.component";
 import CartButton from "../cartButton/cartButton.component";
 
 import Grid from "@material-ui/core/Grid";
@@ -20,7 +24,8 @@ import {
   LogoDiv,
   Drawner,
   CenterText,
-  SideButton
+  SideButton,
+  navbarIcon
 } from "./navbar.styles.jsx";
 import RegisterButton from "../registerButton/register-button.component";
 
@@ -76,24 +81,24 @@ const Navbar = ({ title, parallax }) => {
           style={
             count < 15 && parallax
               ? {
-                  backgroundColor: "black",
-                  opacity: "0.85",
+                  backgroundColor: "white",
+                  opacity: "0.75",
                   transition: "0.4s"
                 }
-              : { backgroundColor: "black", transition: "0.4s" }
+              : { backgroundColor: "white", transition: "0.4s" }
           }
         >
           <Toolbar>
             <Hidden mdUp>
               <div onClick={handleClick}>
                 <IconButton
-                  color="inherit"
+                  color="black"
                   aria-label="Open drawer"
                   edge="start"
                   onClick={() => {}}
                   className="menu-button"
                 >
-                  <MenuIcon />
+                  <DehazeIcon />
                 </IconButton>
               </div>
               <LogoDiv>
@@ -127,7 +132,6 @@ const Navbar = ({ title, parallax }) => {
                   justify="center"
                   alignItems="center"
                 >
-                  <OptionLink>Cursos</OptionLink>
                   <OptionLink>Proyectos</OptionLink>
                   <OptionLink to="/team">Equipo</OptionLink>
                   <OptionLink>Webinars</OptionLink>
@@ -142,9 +146,7 @@ const Navbar = ({ title, parallax }) => {
                 >
                   <CartButton />
                   <RegisterButton />
-                  <Button variant="contained" color="secondary">
-                    Ingresar
-                  </Button>
+                  <SignInModal />
                 </Grid>
               </Grid>
             </Hidden>

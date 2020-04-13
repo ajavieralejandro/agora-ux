@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
 import Container from "@material-ui/core/Container";
-import CourseCard from "../../courseCard/course-card.component";
+import { default as CourseCard } from "../../courseCard/course-card2.component";
 import { Wrap } from "./body-section-2.styles";
 
 const BodySection2 = () => {

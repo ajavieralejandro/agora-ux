@@ -7,13 +7,17 @@ const OptionsContainerStyles = css`
   cursor: pointer;
   font-size: 17px;
   text-decoration: none;
-  color: whitesmoke;
+  color: black;
   display: block;
   &:hover {
     transform: scale(1.2);
     transition: 0.3s;
   }
-  font-family: "Barlow", sans-serif;
+  font-family: "Nunito", sans-serif;
+`;
+
+export const navbarIcon = styled.i`
+  color: black;
 `;
 
 export const HeaderContainer = styled.div`
