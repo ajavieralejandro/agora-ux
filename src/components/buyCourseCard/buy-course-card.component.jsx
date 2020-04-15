@@ -19,8 +19,8 @@ import CartButton2 from "../cartButton2/cartButton2.component";
 
 const BuyCourseCard = () => {
   return (
-    <StyledPaper elevation={3}>
-      <Wrap>
+    <Wrap>
+      <StyledPaper elevation={3}>
         <Container>
           <StyledUl>
             <StyledPrice>
@@ -58,8 +58,8 @@ const BuyCourseCard = () => {
           </StyledUl>
           <CartButton2 />
         </Container>
-      </Wrap>
-    </StyledPaper>
+      </StyledPaper>
+    </Wrap>
   );
 };
 

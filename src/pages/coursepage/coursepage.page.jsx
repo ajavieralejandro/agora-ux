@@ -5,6 +5,7 @@ import CoursePageNavigation from "../../components/coursePageNavigation/course-p
 import AvatarDocente from "../../components/avatarDocente/avatar-docente.component";
 import Grid from "@material-ui/core/Grid";
 import ModuleExpansionPanel from "../../components/modulePanel/module-panel.component";
+import CourseReviews from "../../components/courseReviews/course-reviews.component";
 import { Wrap, StyledP } from "./coursepage.styles";
 const CoursePage = () => {
   return (
@@ -51,6 +52,7 @@ const CoursePage = () => {
                 </StyledP>
 
                 <ModuleExpansionPanel />
+                <CourseReviews />
               </Container>
             </Wrap>
           </Grid>
