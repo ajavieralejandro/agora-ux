@@ -4,6 +4,7 @@ import { setTeam, fetchTeam } from "../../redux/collections/collection.actions";
 import Member from "../../components/member/member.component";
 import Container from "@material-ui/core/Container";
 import { connect } from "react-redux";
+import Fade from "@material-ui/core/Fade";
 
 import Grid from "@material-ui/core/Grid";
 
@@ -37,9 +38,11 @@ const TeamPage = ({ team, fetchTeam, loading }) => {
           >
             {!loading ? (
               team.map(member => (
-                <Grid item md={3}>
-                  <Member teamMember={member} />
-                </Grid>
+                <Fade in={!loading} timeout={2000}>
+                  <Grid item md={3}>
+                    <Member teamMember={member} />
+                  </Grid>
+                </Fade>
               ))
             ) : (
               <Spinner />

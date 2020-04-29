@@ -8,7 +8,6 @@ const HomePageBody = () => {
     <React.Fragment>
       <Wrap2>
         <BodySection2 />
-        <BodySection2 />
       </Wrap2>
       <Wrap>
         <Title>Agora3D</Title>

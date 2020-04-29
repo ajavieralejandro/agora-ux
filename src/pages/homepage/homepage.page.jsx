@@ -12,7 +12,7 @@ const HomePage = props => {
       <Header>
         <Parallax
           blur={{ min: -45, max: 15 }}
-          bgImage="https://lh3.googleusercontent.com/-vFnUrApIvRA/XlGwaSJjjII/AAAAAAAAFhg/ONyr3sahLfQnRsM1ddJShn2Yf1n1MR_9ACK8BGAsYHg/s0/2020-02-22.png"
+          bgImage="https://mail.google.com/mail/u/0?ui=2&ik=08f31e0677&attid=0.1&permmsgid=msg-f:1665088757554228679&th=171b956729842dc7&view=fimg&realattid=f_k9httyt40&disp=thd&attbid=ANGjdJ8Wq57mxk71y73OuQZE_mWLAOefU50ds4LxFQOfOYO57-vu3qZGBypdYdpTOsDyvVeI7WjqDzomwSjbe7Ib54xri2p6a4kFri8CfRrkchpNKGOMuIKrh8dCzbo&ats=2524608000000&sz=w1440-h789"
           bgImageAlt="the dog"
           strength={500}
         >
