@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/agora-ux/static/css/main.b8f5bf34.chunk.css",
+    "main.js": "/agora-ux/static/js/main.ace6af17.chunk.js",
+    "main.js.map": "/agora-ux/static/js/main.ace6af17.chunk.js.map",
+    "runtime-main.js": "/agora-ux/static/js/runtime-main.8d06e4ab.js",
+    "runtime-main.js.map": "/agora-ux/static/js/runtime-main.8d06e4ab.js.map",
+    "static/js/2.6cefac27.chunk.js": "/agora-ux/static/js/2.6cefac27.chunk.js",
+    "static/js/2.6cefac27.chunk.js.map": "/agora-ux/static/js/2.6cefac27.chunk.js.map",
+    "index.html": "/agora-ux/index.html",
+    "precache-manifest.3650d2dccae0ab260ba736aeeab5717b.js": "/agora-ux/precache-manifest.3650d2dccae0ab260ba736aeeab5717b.js",
+    "service-worker.js": "/agora-ux/service-worker.js",
+    "static/css/main.b8f5bf34.chunk.css.map": "/agora-ux/static/css/main.b8f5bf34.chunk.css.map",
+    "static/js/2.6cefac27.chunk.js.LICENSE.txt": "/agora-ux/static/js/2.6cefac27.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8d06e4ab.js",
+    "static/js/2.6cefac27.chunk.js",
+    "static/css/main.b8f5bf34.chunk.css",
+    "static/js/main.ace6af17.chunk.js"
+  ]
+}
