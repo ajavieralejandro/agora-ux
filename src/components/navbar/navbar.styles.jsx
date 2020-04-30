@@ -48,6 +48,20 @@ export const OptionLink = styled(Link)`
   ${OptionsContainerStyles}
 `;
 
+export const OptionLink2 = styled(Link)`
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  &:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+  font-family: "Nunito", sans-serif;
+`;
+
 export const OptionLinkDrawner = styled(Link)`
   ${OptionsContainerStyles}
 `;

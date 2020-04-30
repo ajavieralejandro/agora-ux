@@ -1,5 +1,6 @@
 import React from "react";
 import cx from "clsx";
+import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/styles";
 import Avatar from "@material-ui/core/Avatar";
 import Box from "@material-ui/core/Box";
@@ -8,11 +9,12 @@ import CardMedia from "@material-ui/core/CardMedia";
 import CardContent from "@material-ui/core/CardContent";
 import IconButton from "@material-ui/core/IconButton";
 import FavoriteBorderRounded from "@material-ui/icons/FavoriteBorderRounded";
-import Share from "@material-ui/icons/Share";
+import ChevronRight from "@material-ui/icons/ChevronRight";
 import { useSoftRiseShadowStyles } from "@mui-treasury/styles/shadow/softRise";
 import { useSlopeCardMediaStyles } from "@mui-treasury/styles/cardMedia/slope";
 import { useN01TextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/n01";
 import TextInfoContent from "@mui-treasury/components/content/textInfo";
+import { ButtonDiv } from "./course-card.styles";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -57,12 +59,11 @@ const PostCard = () => {
         />
       </CardContent>
       <Box px={2} pb={2} mt={-1}>
-        <IconButton>
-          <Share />
-        </IconButton>
-        <IconButton>
-          <FavoriteBorderRounded />
-        </IconButton>
+        <ButtonDiv>
+          <IconButton>
+            <Link to="/curso">Ver Mas</Link>
+          </IconButton>
+        </ButtonDiv>
       </Box>
     </Card>
   );

@@ -25,6 +25,7 @@ import {
   Drawner,
   CenterText,
   SideButton,
+  OptionLink2,
   navbarIcon
 } from "./navbar.styles.jsx";
 import RegisterButton from "../registerButton/register-button.component";
@@ -63,11 +64,11 @@ const Navbar = ({ title, parallax }) => {
             </SideButton>
 
             <CenterText>
-              <OptionLink>Cursos</OptionLink>
-              <OptionLink>Alumnos</OptionLink>
-              <OptionLink>Webinars</OptionLink>
-              <OptionLink>Equipo</OptionLink>
-              <OptionLink>Ingresar</OptionLink>
+              <OptionLink2>Cursos</OptionLink2>
+              <OptionLink2>Alumnos</OptionLink2>
+              <OptionLink2>Webinars</OptionLink2>
+              <OptionLink2>Equipo</OptionLink2>
+              <OptionLink2>Ingresar</OptionLink2>
             </CenterText>
           </Drawner>
         </div>
