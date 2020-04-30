@@ -12,7 +12,7 @@ const HomePage = props => {
       <Header>
         <Parallax
           blur={{ min: -45, max: 15 }}
-          bgImage="https://firebasestorage.googleapis.com/v0/b/agora3d-dec6f.appspot.com/o/agora3d.png?alt=media&token=dbaccaa9-198e-49a9-8e28-79335b366283"
+          bgImage={process.env.PUBLIC_URL + "/assets/agora3d.png"}
           bgImageAlt="the dog"
           strength={500}
         >
