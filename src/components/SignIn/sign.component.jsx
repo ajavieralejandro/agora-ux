@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import FormInput from "../formInput/form-input.component";
-import { Block, Container } from "./signin.styles";
+import { Block, Container } from "./sign.styles";
 const SignIn = ({ signUpStart }) => {
   //Esta es la mejor manera de usar Hooks
   const [userCredentials, setUserCredentials] = useState({
@@ -11,7 +11,7 @@ const SignIn = ({ signUpStart }) => {
     confirmPassword: ""
   });
 
-  const { displayName, email, password, confirmPassword } = userCredentials;
+  const { displayName, password, confirmPassword } = userCredentials;
 
   const handleSubmit = async event => {
     event.preventDefault();
@@ -31,25 +31,17 @@ const SignIn = ({ signUpStart }) => {
     <Container>
       <Block>
         <div className="sign-up">
-          <h2 className="title">Crea tu cuenta</h2>
-          <span>Registrate con tu email y password o tu cuenta de google</span>
+          <h2 className="title">Ya tengo una Cuenta</h2>
           <form onSubmit={handleSubmit}>
             <FormInput
               type="text"
               name="displayName"
               value={displayName}
               onChange={handleChange}
-              label="Nombre de Usuario"
+              label="Nombre de Usuario o mail"
               required
             />
-            <FormInput
-              type="email"
-              name="email"
-              value={email}
-              onChange={handleChange}
-              label="Email"
-              required
-            />
+
             <FormInput
               type="password"
               name="password"
@@ -58,21 +50,14 @@ const SignIn = ({ signUpStart }) => {
               label="Password"
               required
             />
-            <FormInput
-              type="password"
-              name="confirmPassword"
-              value={confirmPassword}
-              onChange={handleChange}
-              label="Confirma el Password"
-              required
-            />
-            <Button type="submit">Registrate</Button>
+
+            <Button type="submit">Ingresar</Button>
             <Button
               variant="contained"
               color="secondary"
               href="#contained-buttons"
             >
-              Registrate con Google
+              Ingresar con google
             </Button>
           </form>
         </div>
