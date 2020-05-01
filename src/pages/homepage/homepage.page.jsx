@@ -1,10 +1,17 @@
 import React from "react";
 //Components
-import SearchButton from "../../components/search/search.component";
+
 import HomePageBody from "../../components/homePageBody/home-page-body.component";
 import { Parallax } from "react-parallax";
 //Styles
-import { InsideParallaxDiv, ParallaxImageDiv, Header } from "./homepage.styles";
+import {
+  InsideParallaxDiv,
+  ParallaxImageDiv,
+  Header,
+  StyledH1,
+  CursoButton,
+  RegisterButton
+} from "./homepage.styles";
 
 const HomePage = props => {
   return (
@@ -19,8 +26,10 @@ const HomePage = props => {
           <ParallaxImageDiv />
 
           <InsideParallaxDiv>
-            <h1>mucho más que una escuela online</h1>
-            <SearchButton />
+            <StyledH1>Agora3d</StyledH1>
+            <p>Escuela de modelado 3d</p>
+            <CursoButton>Ver Cursos</CursoButton>
+            <RegisterButton>Crea tu cuenta </RegisterButton>
           </InsideParallaxDiv>
         </Parallax>
       </Header>

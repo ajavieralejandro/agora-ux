@@ -67,8 +67,8 @@ const Navbar = ({ title, parallax }) => {
               <OptionLink2>Cursos</OptionLink2>
               <OptionLink2>Alumnos</OptionLink2>
               <OptionLink2>Webinars</OptionLink2>
-              <OptionLink2>Equipo</OptionLink2>
-              <OptionLink2>Ingresar</OptionLink2>
+              <OptionLink2 to="/team">Equipo</OptionLink2>
+              <OptionLink2 to="/sign">Ingresar</OptionLink2>
             </CenterText>
           </Drawner>
         </div>
@@ -113,30 +113,25 @@ const Navbar = ({ title, parallax }) => {
               <Grid container>
                 <Grid
                   item
-                  md={4}
+                  md={6}
                   container
                   direction="row"
                   justify="flex-start"
                   alignItems="flex-end"
                 >
-                  <LogoDiv>
-                    <Typography variant="h6" noWrap>
-                      <OptionLink to="/">{title}</OptionLink>
-                    </Typography>
-                  </LogoDiv>
-                </Grid>
-
-                <Grid
-                  md={4}
-                  container
-                  direction="row"
-                  justify="center"
-                  alignItems="center"
-                >
+                  <OptionLink to="/">{title}</OptionLink>
                   <OptionLink>Proyectos</OptionLink>
                   <OptionLink to="/team">Equipo</OptionLink>
                   <OptionLink>Webinars</OptionLink>
                 </Grid>
+
+                <Grid
+                  md={2}
+                  container
+                  direction="row"
+                  justify="center"
+                  alignItems="center"
+                ></Grid>
 
                 <Grid
                   md={4}
@@ -146,7 +141,7 @@ const Navbar = ({ title, parallax }) => {
                   alignItems="center"
                 >
                   <CartButton />
-                  <RegisterButton />
+                  <RegisterButton></RegisterButton>
                   <SignInModal />
                 </Grid>
               </Grid>

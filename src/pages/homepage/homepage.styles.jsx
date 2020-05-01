@@ -1,8 +1,35 @@
 import styled from "styled-components";
+import Button from "@material-ui/core/Button";
 
 export const ParallaxImageDiv = styled.div`
   height: 800px;
   width: 600px;
+`;
+
+export const CursoButton = styled.a`
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+`;
+
+export const RegisterButton = styled.a`
+  background-color: whitesmoke;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 `;
 
 export const Header = styled.header`
@@ -13,6 +40,12 @@ export const Header = styled.header`
   color: black;
   width: 100%;
   margin: 0;
+`;
+
+export const StyledH1 = styled.h1`
+  color: blanchedalmond;
+  font-family: "Nunito", sans-serif;
+  font-size: 86px;
 `;
 
 export const InsideParallaxDiv = styled.div`

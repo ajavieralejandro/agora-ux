@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Register from "../../components/signIn/signIn.component";
+import Register from "../../components/Register/register.component";
 import Grid from "@material-ui/core/Grid";
 import SignIn from "../../components/SignIn/sign.component";
 import { PageWrapper, RegisterButton } from "./signpage.styles";
