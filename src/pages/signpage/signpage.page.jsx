@@ -2,19 +2,32 @@ import React, { useEffect } from "react";
 import Register from "../../components/Register/register.component";
 import Grid from "@material-ui/core/Grid";
 import SignIn from "../../components/SignIn/sign.component";
-import { PageWrapper, RegisterButton } from "./signpage.styles";
+import Container from "@material-ui/core/Container";
+
+import {
+  PageWrapper,
+  RegisterButton,
+  InsideParallaxDiv,
+  ParallaxImageDiv
+} from "./signpage.styles";
+import { Parallax } from "react-parallax";
 
 const SignPage = () => {
   return (
     <PageWrapper>
-      <Grid container direction="row" justify="center" alignItems="center">
-        <Grid item xs={12} md={7}>
-          <Register />
-        </Grid>
-        <Grid item xs={12} md={5}>
-          <SignIn />
-        </Grid>
-      </Grid>
+      <Container>
+        <Parallax
+          blur={{ min: -45, max: 15 }}
+          bgImage={process.env.PUBLIC_URL + "/assets/3dprinter.jpg"}
+          bgImageAlt="the dog"
+          strength={500}
+        >
+          <ParallaxImageDiv />
+          <InsideParallaxDiv>
+            <Register />
+          </InsideParallaxDiv>
+        </Parallax>
+      </Container>
     </PageWrapper>
   );
 };

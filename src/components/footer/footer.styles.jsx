@@ -11,7 +11,7 @@ width: 100%;
     
 `;
 export const BackDiv = styled.div`
-    background-color: gainsboro;
+    background-color: #1a3300;
     width: 100%,
     display : block;
 
@@ -19,11 +19,11 @@ export const BackDiv = styled.div`
 `;
 
 export const FooterBodyContainer = styled.div`
-  background-color: silver;
+  background-color: white;
 `;
 
 export const FooterContainer = styled.div`
-  margin-top: 15%;
+  margin-top: 3%;
 `;
 
 export const DT = styled.dt`

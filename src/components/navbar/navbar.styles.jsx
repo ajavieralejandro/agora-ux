@@ -5,11 +5,12 @@ import { Link } from "react-router-dom";
 const OptionsContainerStyles = css`
   padding: 10px 15px;
   cursor: pointer;
-  font-size: 17px;
+  font-size: 22px;
   text-decoration: none;
-  color: black;
+  color: #1a3300;
   display: block;
   &:hover {
+    color: red;
     transform: scale(1.2);
     transition: 0.3s;
   }

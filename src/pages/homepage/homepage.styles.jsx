@@ -9,7 +9,7 @@ export const ParallaxImageDiv = styled.div`
 export const CursoButton = styled.a`
   background-color: whitesmoke;
   border: none;
-  color: black;
+  color: #1a3300;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -22,7 +22,7 @@ export const CursoButton = styled.a`
 export const RegisterButton = styled.a`
   background-color: whitesmoke;
   border: none;
-  color: black;
+  color: #1a3300;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -43,16 +43,16 @@ export const Header = styled.header`
 `;
 
 export const StyledH1 = styled.h1`
-  color: blanchedalmond;
+  color: #f5f5f5;
   font-family: "Nunito", sans-serif;
   font-size: 86px;
 `;
 
 export const InsideParallaxDiv = styled.div`
   position: absolute;
-  bottom: 170px;
+  bottom: 290px;
   left: 146px;
-  color: blanchedalmond;
+  color: #f5f5f5;
   font-family: "Nunito", sans-serif;
   font-size: 18px;
   @media (max-width: 900px) {
