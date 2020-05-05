@@ -11,7 +11,7 @@ width: 100%;
     
 `;
 export const BackDiv = styled.div`
-    background-color: #1a3300;
+    background-color: #2f2f1e;
     width: 100%,
     display : block;
 
@@ -20,6 +20,7 @@ export const BackDiv = styled.div`
 
 export const FooterBodyContainer = styled.div`
   background-color: white;
+  margin-top: 15%;
 `;
 
 export const FooterContainer = styled.div`

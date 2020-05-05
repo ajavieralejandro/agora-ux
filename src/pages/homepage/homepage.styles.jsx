@@ -17,6 +17,11 @@ export const CursoButton = styled.a`
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  &:hover {
+    background-color: #1a3300;
+    color: white;
+    transition: 0.4s;
+  }
 `;
 
 export const RegisterButton = styled.a`
@@ -30,6 +35,11 @@ export const RegisterButton = styled.a`
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  &:hover {
+    background-color: #1a3300;
+    color: white;
+    transition: 0.4s;
+  }
 `;
 
 export const Header = styled.header`

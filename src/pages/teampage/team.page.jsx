@@ -32,14 +32,14 @@ const TeamPage = ({ team, fetchTeam, loading }) => {
           <Grid
             container
             direction="row"
-            justify="flex-start"
+            justify="center"
             alignItems="center"
             spacing={2}
           >
             {!loading ? (
               team.map(member => (
-                <Fade in={!loading} timeout={2000}>
-                  <Grid item md={3}>
+                <Fade in={!loading} timeout={3000}>
+                  <Grid item md={3} sm={6}>
                     <Member teamMember={member} />
                   </Grid>
                 </Fade>

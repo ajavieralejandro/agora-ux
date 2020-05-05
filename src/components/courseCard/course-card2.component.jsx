@@ -14,7 +14,7 @@ import { useSoftRiseShadowStyles } from "@mui-treasury/styles/shadow/softRise";
 import { useSlopeCardMediaStyles } from "@mui-treasury/styles/cardMedia/slope";
 import { useN01TextInfoContentStyles } from "@mui-treasury/styles/textInfoContent/n01";
 import TextInfoContent from "@mui-treasury/components/content/textInfo";
-import { ButtonDiv } from "./course-card.styles";
+import { ButtonDiv, StyledLink } from "./course-card.styles";
 
 const useStyles = makeStyles(() => ({
   root: {
@@ -61,7 +61,7 @@ const PostCard = () => {
       <Box px={2} pb={2} mt={-1}>
         <ButtonDiv>
           <IconButton>
-            <Link to="/curso">Ver Mas</Link>
+            <StyledLink to="/curso">Ver Mas</StyledLink>
           </IconButton>
         </ButtonDiv>
       </Box>

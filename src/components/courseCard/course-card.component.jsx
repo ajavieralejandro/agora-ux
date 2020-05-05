@@ -51,9 +51,7 @@ function CourseCard() {
           justify="flex-start"
           alignItems="center"
         >
-          <Button size="small" color="primary">
-            Ver más
-          </Button>
+          <Button size="small">Ver más</Button>
         </Grid>
         <Grid container direction="row" justify="flex-end" alignItems="center">
           <CartButton />

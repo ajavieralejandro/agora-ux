@@ -12,7 +12,7 @@ export const ParallaxImageDiv = styled.div`
 
 export const InsideParallaxDiv = styled.div`
   position: absolute;
-  top: 50%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;

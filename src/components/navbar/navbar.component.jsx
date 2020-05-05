@@ -26,9 +26,9 @@ import {
   CenterText,
   SideButton,
   OptionLink2,
-  navbarIcon
+  SignButton,
+  RegisterButton
 } from "./navbar.styles.jsx";
-import RegisterButton from "../registerButton/register-button.component";
 
 const Navbar = ({ title, parallax }) => {
   const [count, setCount] = useState(0);
@@ -67,7 +67,9 @@ const Navbar = ({ title, parallax }) => {
               <OptionLink2>Cursos</OptionLink2>
               <OptionLink2>Alumnos</OptionLink2>
               <OptionLink2>Webinars</OptionLink2>
-              <OptionLink2 to="/team">Equipo</OptionLink2>
+              <OptionLink2 onClick={handleExit} to="/team">
+                Equipo
+              </OptionLink2>
               <OptionLink2 to="/sign">Ingresar</OptionLink2>
             </CenterText>
           </Drawner>
@@ -141,8 +143,8 @@ const Navbar = ({ title, parallax }) => {
                   alignItems="center"
                 >
                   <CartButton />
-                  <RegisterButton></RegisterButton>
-                  <SignInModal />
+                  <RegisterButton to="/sign">Crea tu cuenta</RegisterButton>
+                  <SignButton>Ingresar</SignButton>
                 </Grid>
               </Grid>
             </Hidden>

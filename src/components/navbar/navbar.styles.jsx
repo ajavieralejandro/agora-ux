@@ -1,16 +1,17 @@
 import Grid from "@material-ui/core/Grid";
 import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
-
+import { default as RB } from "../registerButton/register-button.component";
+import { default as SB } from "../signInModal/sign-in.component";
 const OptionsContainerStyles = css`
   padding: 10px 15px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 21px;
   text-decoration: none;
   color: #1a3300;
   display: block;
   &:hover {
-    color: red;
+    color: #ff6666;
     transform: scale(1.2);
     transition: 0.3s;
   }
@@ -129,5 +130,43 @@ export const SideButton = styled.a`
   top: 0;
   &:hover {
     transform: scale(1.5);
+  }
+`;
+
+export const SignButton = styled.a`
+  background-color: white;
+  border: 0.5px solid #1a3300;
+  border-radius: 7px;
+  color: #1a3300;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  &:hover {
+    background-color: #1a3300;
+    color: white;
+    transition: 0.4s;
+  }
+`;
+
+export const RegisterButton = styled(Link)`
+  background-color: white;
+  border: 0.5px solid #ff6666;
+  border-radius: 7px;
+  color: #ff6666;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  &:hover {
+    background-color: #ff6666;
+    color: white;
+    transition: 0.4s;
   }
 `;
