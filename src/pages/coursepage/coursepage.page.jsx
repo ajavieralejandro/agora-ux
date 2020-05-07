@@ -6,10 +6,10 @@ import AvatarDocente from "../../components/avatarDocente/avatar-docente.compone
 import Grid from "@material-ui/core/Grid";
 import ModuleExpansionPanel from "../../components/modulePanel/module-panel.component";
 import CourseReviews from "../../components/courseReviews/course-reviews.component";
-import { Wrap, StyledP } from "./coursepage.styles";
+import { Wrap, Wrap2, StyledP } from "./coursepage.styles";
 const CoursePage = () => {
   return (
-    <Wrap>
+    <Wrap2>
       <Container>
         <Grid container>
           <Grid item md={10}>
@@ -63,7 +63,7 @@ const CoursePage = () => {
           </Grid>
         </Grid>
       </Container>
-    </Wrap>
+    </Wrap2>
   );
 };
 

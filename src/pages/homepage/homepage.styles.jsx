@@ -7,9 +7,9 @@ export const ParallaxImageDiv = styled.div`
 `;
 
 export const CursoButton = styled.a`
-  background-color: whitesmoke;
+  background-color: #ff6666;
   border: none;
-  color: #1a3300;
+  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -18,16 +18,15 @@ export const CursoButton = styled.a`
   margin: 4px 2px;
   cursor: pointer;
   &:hover {
-    background-color: #1a3300;
-    color: white;
+    color: black;
     transition: 0.4s;
   }
 `;
 
 export const RegisterButton = styled.a`
-  background-color: whitesmoke;
+  background-color: #1a3300;
   border: none;
-  color: #1a3300;
+  color: white;
   padding: 15px 32px;
   text-align: center;
   text-decoration: none;
@@ -37,7 +36,7 @@ export const RegisterButton = styled.a`
   cursor: pointer;
   &:hover {
     background-color: #1a3300;
-    color: white;
+    color: black;
     transition: 0.4s;
   }
 `;

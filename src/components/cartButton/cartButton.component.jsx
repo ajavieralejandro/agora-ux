@@ -7,6 +7,7 @@ const CartButton = () => {
   return (
     <ButtonDiv>
       <IconButton color="primary">
+        2
         <FiShoppingCart />
       </IconButton>
     </ButtonDiv>

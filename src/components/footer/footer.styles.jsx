@@ -19,7 +19,8 @@ export const BackDiv = styled.div`
 `;
 
 export const FooterBodyContainer = styled.div`
-  background-color: white;
+  background-color: black;
+  color: white;
   margin-top: 15%;
 `;
 

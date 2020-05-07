@@ -11,7 +11,7 @@ import Fade from "@material-ui/core/Fade";
 import Button from "@material-ui/core/Button";
 import SearchButton from "../../components/search/search.component";
 import DehazeIcon from "@material-ui/icons/Dehaze";
-
+import CartIcon from "../cart-icon/cart-icon.component";
 import SignInModal from "../signInModal/sign-in.component";
 import CartButton from "../cartButton/cartButton.component";
 
@@ -84,11 +84,11 @@ const Navbar = ({ title, parallax }) => {
           style={
             count < 15 && parallax
               ? {
-                  backgroundColor: "white",
+                  backgroundColor: "black",
                   opacity: "0.75",
-                  transition: "0.4s"
+                  transition: "2s"
                 }
-              : { backgroundColor: "white", transition: "0.4s" }
+              : { backgroundColor: "black", transition: "2  s" }
           }
         >
           <Toolbar>
@@ -119,7 +119,7 @@ const Navbar = ({ title, parallax }) => {
                   container
                   direction="row"
                   justify="flex-start"
-                  alignItems="flex-end"
+                  alignItems="center"
                 >
                   <OptionLink to="/">{title}</OptionLink>
                   <OptionLink>Proyectos</OptionLink>
@@ -142,7 +142,7 @@ const Navbar = ({ title, parallax }) => {
                   justify="flex-end"
                   alignItems="center"
                 >
-                  <CartButton />
+                  <CartIcon />
                   <RegisterButton to="/sign">Crea tu cuenta</RegisterButton>
                   <SignButton>Ingresar</SignButton>
                 </Grid>

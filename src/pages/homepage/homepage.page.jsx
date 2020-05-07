@@ -5,7 +5,7 @@ import HomePageBody from "../../components/homePageBody/home-page-body.component
 import { Parallax } from "react-parallax";
 import Container from "@material-ui/core/Container";
 import Slide from "@material-ui/core/Slide";
-
+import { default as Search } from "../../components/search/search.component";
 //Styles
 import {
   InsideParallaxDiv,

@@ -6,9 +6,9 @@ import { default as SB } from "../signInModal/sign-in.component";
 const OptionsContainerStyles = css`
   padding: 10px 15px;
   cursor: pointer;
-  font-size: 21px;
+  font-size: 16px;
   text-decoration: none;
-  color: #1a3300;
+  color: white;
   display: block;
   &:hover {
     color: #ff6666;
@@ -43,7 +43,7 @@ export const OptionsContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  font-size: 16px;
+  font-size: 12px;
 `;
 
 export const OptionLink = styled(Link)`
@@ -134,15 +134,15 @@ export const SideButton = styled.a`
 `;
 
 export const SignButton = styled.a`
-  background-color: white;
+  background-color: #1a3300;
   border: 0.5px solid #1a3300;
   border-radius: 7px;
-  color: #1a3300;
+  color: white;
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
   &:hover {
@@ -153,15 +153,15 @@ export const SignButton = styled.a`
 `;
 
 export const RegisterButton = styled(Link)`
-  background-color: white;
+  background-color: #ff6666;
   border: 0.5px solid #ff6666;
   border-radius: 7px;
-  color: #ff6666;
+  color: white;
   padding: 5px 15px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   margin: 4px 2px;
   cursor: pointer;
   &:hover {
