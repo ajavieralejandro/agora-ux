@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/agora-ux/static/css/main.4abac9df.chunk.css",
-    "main.js": "/agora-ux/static/js/main.75f7e991.chunk.js",
-    "main.js.map": "/agora-ux/static/js/main.75f7e991.chunk.js.map",
+    "main.css": "/agora-ux/static/css/main.49cccce3.chunk.css",
+    "main.js": "/agora-ux/static/js/main.6df34420.chunk.js",
+    "main.js.map": "/agora-ux/static/js/main.6df34420.chunk.js.map",
     "runtime-main.js": "/agora-ux/static/js/runtime-main.8d06e4ab.js",
     "runtime-main.js.map": "/agora-ux/static/js/runtime-main.8d06e4ab.js.map",
     "static/js/2.e71010a5.chunk.js": "/agora-ux/static/js/2.e71010a5.chunk.js",
     "static/js/2.e71010a5.chunk.js.map": "/agora-ux/static/js/2.e71010a5.chunk.js.map",
     "index.html": "/agora-ux/index.html",
-    "precache-manifest.35cec1416d79e52de87ee1e6bd1817e7.js": "/agora-ux/precache-manifest.35cec1416d79e52de87ee1e6bd1817e7.js",
+    "precache-manifest.38c73395241ae01e678c083570431d34.js": "/agora-ux/precache-manifest.38c73395241ae01e678c083570431d34.js",
     "service-worker.js": "/agora-ux/service-worker.js",
-    "static/css/main.4abac9df.chunk.css.map": "/agora-ux/static/css/main.4abac9df.chunk.css.map",
+    "static/css/main.49cccce3.chunk.css.map": "/agora-ux/static/css/main.49cccce3.chunk.css.map",
     "static/js/2.e71010a5.chunk.js.LICENSE.txt": "/agora-ux/static/js/2.e71010a5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.8d06e4ab.js",
     "static/js/2.e71010a5.chunk.js",
-    "static/css/main.4abac9df.chunk.css",
-    "static/js/main.75f7e991.chunk.js"
+    "static/css/main.49cccce3.chunk.css",
+    "static/js/main.6df34420.chunk.js"
   ]
 }
