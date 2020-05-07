@@ -8,10 +8,10 @@ const OptionsContainerStyles = css`
   cursor: pointer;
   font-size: 16px;
   text-decoration: none;
-  color: white;
+  color: azure;
   display: block;
   &:hover {
-    color: #ff6666;
+    color: #009999;
     transform: scale(1.2);
     transition: 0.3s;
   }
@@ -134,8 +134,8 @@ export const SideButton = styled.a`
 `;
 
 export const SignButton = styled.a`
-  background-color: #1a3300;
-  border: 0.5px solid #1a3300;
+  background-color: #009999;
+  border: 0.5px solid #009999;
   border-radius: 7px;
   color: white;
   padding: 5px 15px;
@@ -146,15 +146,15 @@ export const SignButton = styled.a`
   margin: 4px 2px;
   cursor: pointer;
   &:hover {
-    background-color: #1a3300;
-    color: white;
+    border: 0.5px solid black;
+    color: black;
     transition: 0.4s;
   }
 `;
 
 export const RegisterButton = styled(Link)`
-  background-color: #ff6666;
-  border: 0.5px solid #ff6666;
+  background-color: #005580;
+  border: 0.5px solid #005580;
   border-radius: 7px;
   color: white;
   padding: 5px 15px;
@@ -165,8 +165,8 @@ export const RegisterButton = styled(Link)`
   margin: 4px 2px;
   cursor: pointer;
   &:hover {
-    background-color: #ff6666;
-    color: white;
+    border: 0.5px solid black;
+    color: black;
     transition: 0.4s;
   }
 `;

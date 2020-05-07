@@ -84,7 +84,7 @@ const Navbar = ({ title, parallax }) => {
           style={
             count < 15 && parallax
               ? {
-                  backgroundColor: "black",
+                  backgroundColor: "transparent",
                   opacity: "0.75",
                   transition: "2s"
                 }
