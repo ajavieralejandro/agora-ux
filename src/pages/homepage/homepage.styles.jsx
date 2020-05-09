@@ -10,6 +10,12 @@ export const MarginDiv = styled.div`
   margin-top: 5.3%;
 `;
 
+export const Black = styled.div`
+  margin-top: -5%;
+  background-color: black;
+  width  100%;
+`;
+
 export const CursoButton = styled.a`
   background-color: #009999;
   border: none;
@@ -53,7 +59,9 @@ export const Header = styled.header`
   font-size: calc(10px + 2vmin);
   color: black;
   width: 100%;
-  margin: 0;
+  @media (max-width: 800px) {
+    margin-top: 11%;
+  }
 `;
 
 export const StyledH1 = styled.h1`
@@ -69,10 +77,11 @@ export const InsideParallaxDiv = styled.div`
   color: #f5f5f5;
   font-family: "Nunito", sans-serif;
   font-size: 18px;
-  @media (max-width: 900px) {
+  @media (max-width: 800px) {
+    text-align: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
+    top: 30%;
+    left: 10%;
     transform: translate(-50%, -50%);
   }
 `;

@@ -5,10 +5,9 @@ import Member from "../../components/member/member.component";
 import Container from "@material-ui/core/Container";
 import { connect } from "react-redux";
 import Fade from "@material-ui/core/Fade";
+import { Black, Margin } from "./team.styles";
 
 import Grid from "@material-ui/core/Grid";
-
-import "./team.styles.scss";
 
 const TeamPage = ({ team, fetchTeam, loading }) => {
   //Analogo a componentDidMount
@@ -25,31 +24,33 @@ const TeamPage = ({ team, fetchTeam, loading }) => {
 
   return (
     <div>
-      <div className="team-wrap">
-        <Container fixed>
-          <h1>Nuestro Equipo </h1>
+      <Black>
+        <div className="team-wrap">
+          <Container fixed>
+            <h1>Nuestro Equipo </h1>
 
-          <Grid
-            container
-            direction="row"
-            justify="center"
-            alignItems="center"
-            spacing={2}
-          >
-            {!loading ? (
-              team.map(member => (
-                <Fade in={!loading} timeout={3000}>
-                  <Grid item md={3} sm={6}>
-                    <Member teamMember={member} />
-                  </Grid>
-                </Fade>
-              ))
-            ) : (
-              <Spinner />
-            )}
-          </Grid>
-        </Container>
-      </div>
+            <Grid
+              container
+              direction="row"
+              justify="center"
+              alignItems="center"
+              spacing={2}
+            >
+              {!loading ? (
+                team.map(member => (
+                  <Fade in={!loading} timeout={3000}>
+                    <Grid item md={3} sm={6}>
+                      <Member teamMember={member} />
+                    </Grid>
+                  </Fade>
+                ))
+              ) : (
+                <Spinner />
+              )}
+            </Grid>
+          </Container>
+        </div>
+      </Black>
     </div>
   );
 };

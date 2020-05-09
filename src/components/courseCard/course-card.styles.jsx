@@ -10,10 +10,10 @@ export const ButtonDiv = styled.div`
 `;
 
 export const StyledLink = styled(Link)`
-  color: red;
+  color: #009999
   display: block;
   &:hover {
-    color: #1a3300;
+    color: #005580;
   }
   font-family: "Nunito", sans-serif;
 `;

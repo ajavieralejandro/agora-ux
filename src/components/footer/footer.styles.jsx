@@ -21,11 +21,10 @@ export const BackDiv = styled.div`
 export const FooterBodyContainer = styled.div`
   background-color: black;
   color: white;
-  margin-top: 15%;
 `;
 
 export const FooterContainer = styled.div`
-  margin-top: 3%;
+  margin-top: 0%;
 `;
 
 export const DT = styled.dt`

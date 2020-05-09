@@ -12,6 +12,8 @@ import Button from "@material-ui/core/Button";
 import SearchButton from "../../components/search/search.component";
 import DehazeIcon from "@material-ui/icons/Dehaze";
 import CartIcon from "../cart-icon/cart-icon.component";
+import { connect } from "react-redux";
+
 import SignInModal from "../signInModal/sign-in.component";
 import CartButton from "../cartButton/cartButton.component";
 
@@ -30,7 +32,8 @@ import {
   RegisterButton
 } from "./navbar.styles.jsx";
 
-const Navbar = ({ title, parallax }) => {
+const Navbar = ({ title, parallax, homePage }) => {
+  console.log("Estoy recibiendo desde el navbar : ", homePage);
   const [count, setCount] = useState(0);
   const [drawner, setdrawner] = useState(false);
   console.log("El effect es : ", parallax);
@@ -82,7 +85,7 @@ const Navbar = ({ title, parallax }) => {
           position="fixed"
           className="appbar"
           style={
-            count < 15 && parallax
+            homePage && count < 15 && parallax
               ? {
                   backgroundColor: "transparent",
                   opacity: "0.75",
@@ -155,4 +158,8 @@ const Navbar = ({ title, parallax }) => {
   );
 };
 
-export default Navbar;
+const mapStateToProps = state => ({
+  homePage: state.navigation.homePage
+});
+
+export default connect(mapStateToProps, null)(Navbar);

@@ -1,10 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 //Components
 
 import HomePageBody from "../../components/homePageBody/home-page-body.component";
 import { Parallax } from "react-parallax";
 import Container from "@material-ui/core/Container";
 import Slide from "@material-ui/core/Slide";
+import { setHomePage } from "../../redux/collections/navigation/navigation.actions";
+import { connect } from "react-redux";
 import { default as Search } from "../../components/search/search.component";
 //Styles
 import {
@@ -14,11 +16,21 @@ import {
   StyledH1,
   CursoButton,
   RegisterButton,
-  MarginDiv
+  MarginDiv,
+  Black
 } from "./homepage.styles";
 
-const HomePage = props => {
+const HomePage = ({ setHomePage }) => {
   const [checked, setChecked] = React.useState(true);
+  useEffect(() => {
+    return () => {
+      console.log("will unmount");
+      setHomePage(false);
+    };
+  }, []);
+  useEffect(() => {
+    setHomePage(true);
+  });
 
   return (
     <div id="page-wrapper">
@@ -50,9 +62,15 @@ const HomePage = props => {
           </MarginDiv>
         </Container>
       </Header>
-      <HomePageBody />
+      <Black>
+        <HomePageBody />
+      </Black>
     </div>
   );
 };
 
-export default HomePage;
+const mapDispatchToProps = dispatch => ({
+  setHomePage: state => dispatch(setHomePage(state))
+});
+
+export default connect(null, mapDispatchToProps)(HomePage);

@@ -19,9 +19,11 @@ import { ButtonDiv, StyledLink } from "./course-card.styles";
 const useStyles = makeStyles(() => ({
   root: {
     maxWidth: 304,
-    margin: "auto"
+    margin: "auto",
+    backgroundColor: "#1f2e2e"
   },
   content: {
+    color: "white",
     padding: 24
   },
   avatar: {

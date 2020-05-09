@@ -1,6 +1,8 @@
-import {combineReducers} from 'redux';
-import teamReducer from './collections/team-collection.reducer';
+import { combineReducers } from "redux";
+import teamReducer from "./collections/team-collection.reducer";
+import navigationReducer from "./collections/navigation/navigation.reducer";
 
 export default combineReducers({
-    team : teamReducer
-})
+  team: teamReducer,
+  navigation: navigationReducer
+});
