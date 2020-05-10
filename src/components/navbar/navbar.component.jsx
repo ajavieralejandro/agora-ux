@@ -29,6 +29,7 @@ import {
   SideButton,
   OptionLink2,
   SignButton,
+  StyledIcon,
   RegisterButton
 } from "./navbar.styles.jsx";
 
@@ -104,7 +105,7 @@ const Navbar = ({ title, parallax, homePage }) => {
                   onClick={() => {}}
                   className="menu-button"
                 >
-                  <DehazeIcon />
+                  <StyledIcon />
                 </IconButton>
               </div>
               <LogoDiv>

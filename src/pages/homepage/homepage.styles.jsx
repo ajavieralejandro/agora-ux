@@ -2,8 +2,8 @@ import styled from "styled-components";
 import Button from "@material-ui/core/Button";
 
 export const ParallaxImageDiv = styled.div`
-  height: 800px;
-  width: 600px;
+  height: 600px;
+  width: 400px;
 `;
 
 export const MarginDiv = styled.div`
@@ -60,7 +60,7 @@ export const Header = styled.header`
   color: black;
   width: 100%;
   @media (max-width: 800px) {
-    margin-top: 11%;
+    margin-top: -5%;
   }
 `;
 
@@ -68,6 +68,9 @@ export const StyledH1 = styled.h1`
   color: #f5f5f5;
   font-family: "Nunito", sans-serif;
   font-size: 86px;
+  @media (max-width: 800px) {
+    font-size: 55px;
+  }
 `;
 
 export const InsideParallaxDiv = styled.div`
@@ -81,7 +84,7 @@ export const InsideParallaxDiv = styled.div`
     text-align: center;
     position: absolute;
     top: 30%;
-    left: 10%;
+    left: 1%;
     transform: translate(-50%, -50%);
   }
 `;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import TextField from "@material-ui/core/TextField";
 import Button from "@material-ui/core/Button";
+import { Link } from "react-router-dom";
 
 export const StyledText = styled(TextField)`
   width: 70%;
@@ -26,13 +27,23 @@ export const Margin5 = styled.div`
   margin-top: 1%;
 `;
 
-export const RegisterButton = styled(Button)`
-  /* Adapt the colors based on primary prop */
-  width: 100%;
-  margin-top: 25%;
-  font-size: 1em;
-  margin: 1em;
-  padding: 0.25em 1em;
+export const RegisterButton = styled(Link)`
+  background-color: #005580;
+  border: 0.5px solid #005580;
+  border-radius: 7px;
+  color: white;
+  padding: 5px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+  &:hover {
+    border: 0.5px solid black;
+    color: black;
+    transition: 0.4s;
+  }
 `;
 
 export const Block = styled.div`

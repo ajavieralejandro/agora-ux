@@ -1,7 +1,7 @@
 import NavigationActionTypes from "./navigation.types";
 
 const INITIAL_STATE = {
-  homePage: true
+  homePage: false
 };
 
 const navigationReducer = (state = INITIAL_STATE, action) => {

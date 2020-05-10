@@ -3,6 +3,12 @@ import styled, { css } from "styled-components";
 import { Link } from "react-router-dom";
 import { default as RB } from "../registerButton/register-button.component";
 import { default as SB } from "../signInModal/sign-in.component";
+import DehazeIcon from "@material-ui/icons/Dehaze";
+
+export const StyledIcon = styled(DehazeIcon)`
+  color: white;
+`;
+
 const OptionsContainerStyles = css`
   padding: 10px 15px;
   cursor: pointer;
@@ -19,7 +25,7 @@ const OptionsContainerStyles = css`
 `;
 
 export const navbarIcon = styled.i`
-  color: black;
+  color: white;
 `;
 
 export const HeaderContainer = styled.div`

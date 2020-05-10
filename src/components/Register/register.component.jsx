@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Button from "@material-ui/core/Button";
 import FormInput from "../formInput/form-input.component";
-import { Block, Container } from "./register.styles";
+import { Block, Container, RegisterButton } from "./register.styles";
 const Register = ({ signUpStart }) => {
   //Esta es la mejor manera de usar Hooks
   const [userCredentials, setUserCredentials] = useState({
@@ -39,7 +39,7 @@ const Register = ({ signUpStart }) => {
               name="displayName"
               value={displayName}
               onChange={handleChange}
-              label="Nombre de Usuario"
+              label="Usuario"
               required
             />
             <FormInput
@@ -63,17 +63,17 @@ const Register = ({ signUpStart }) => {
               name="confirmPassword"
               value={confirmPassword}
               onChange={handleChange}
-              label="Confirma el Password"
+              label="Confirmar pass"
               required
             />
             <Button type="submit">Registrate</Button>
-            <Button
+            <RegisterButton
               variant="contained"
               color="secondary"
               href="#contained-buttons"
             >
               Registrate con Google
-            </Button>
+            </RegisterButton>
           </form>
         </div>
       </Block>

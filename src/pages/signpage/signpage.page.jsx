@@ -18,7 +18,7 @@ const SignPage = () => {
       <Container>
         <Parallax
           blur={{ min: -45, max: 15 }}
-          bgImage={process.env.PUBLIC_URL + "/assets/3dprinter.jpg"}
+          bgImage={process.env.PUBLIC_URL + "/assets/teamparallax.jpeg"}
           bgImageAlt="the dog"
           strength={500}
         >

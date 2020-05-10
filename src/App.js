@@ -9,6 +9,7 @@ import Footer from "./components/footer/footer.component";
 import SignPage from "./pages/signpage/signpage.page";
 import CoursesPage from "./pages/coursespage/course-page";
 import CoursePage from "./pages/coursepage/coursepage.page";
+import WebinarsPage from "./pages/webinars/webinars.page";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route exact path="/sign" component={SignPage} />
         <Route exact path="/cursos" component={CoursesPage} />
         <Route exact path="/curso" component={CoursePage} />
+        <Route exact path="/webinars" component={WebinarsPage} />
         <Route path="/" component={HomePage} />
       </Switch>
       <Footer />
