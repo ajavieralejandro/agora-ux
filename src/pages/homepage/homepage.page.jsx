@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+
 //Components
 
 import HomePageBody from "../../components/homePageBody/home-page-body.component";
@@ -20,6 +21,8 @@ import {
   Black
 } from "./homepage.styles";
 
+import "./homepage.styles";
+
 const HomePage = ({ setHomePage }) => {
   const [checked, setChecked] = React.useState(true);
   useEffect(() => {
@@ -35,32 +38,34 @@ const HomePage = ({ setHomePage }) => {
   return (
     <div id="page-wrapper">
       <Header>
-        <Container>
-          <MarginDiv>
-            <Parallax
-              blur={{ min: -45, max: 15 }}
-              bgImage={process.env.PUBLIC_URL + "/assets/parallax.png"}
-              bgImageAlt="the dog"
-              strength={500}
-            >
-              <ParallaxImageDiv />
-              <Slide
-                direction="up"
-                in={checked}
-                mountOnEnter
-                unmountOnExit
-                timeout={600}
+        <div className="gradient">
+          <Container>
+            <MarginDiv>
+              <Parallax
+                blur={{ min: -45, max: 15 }}
+                bgImage={process.env.PUBLIC_URL + "/assets/parallax.png"}
+                bgImageAlt="the dog"
+                strength={500}
               >
-                <InsideParallaxDiv>
-                  <StyledH1>Agora3d</StyledH1>
-                  <p>Escuela de modelado 3d</p>
-                  <CursoButton>Ver Cursos</CursoButton>
-                  <RegisterButton>Crea tu cuenta </RegisterButton>
-                </InsideParallaxDiv>
-              </Slide>
-            </Parallax>
-          </MarginDiv>
-        </Container>
+                <ParallaxImageDiv />
+                <Slide
+                  direction="up"
+                  in={checked}
+                  mountOnEnter
+                  unmountOnExit
+                  timeout={600}
+                >
+                  <InsideParallaxDiv>
+                    <StyledH1>Agora3D</StyledH1>
+                    <p>Escuela de modelado 3d</p>
+                    <CursoButton>Ver Cursos</CursoButton>
+                    <RegisterButton>Crea tu cuenta </RegisterButton>
+                  </InsideParallaxDiv>
+                </Slide>
+              </Parallax>
+            </MarginDiv>
+          </Container>
+        </div>
       </Header>
       <Black>
         <HomePageBody />

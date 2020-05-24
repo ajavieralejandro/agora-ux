@@ -8,9 +8,7 @@ const WebinarsPage = () => {
     <Black>
       <Unusefulldiv />
       <MarginDiv>
-        <Container>
-          <Calendar />
-        </Container>
+        <Calendar />
       </MarginDiv>
     </Black>
   );

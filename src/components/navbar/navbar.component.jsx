@@ -34,7 +34,6 @@ import {
 } from "./navbar.styles.jsx";
 
 const Navbar = ({ title, parallax, homePage }) => {
-  console.log("Estoy recibiendo desde el navbar : ", homePage);
   const [count, setCount] = useState(0);
   const [drawner, setdrawner] = useState(false);
   console.log("El effect es : ", parallax);
@@ -85,7 +84,8 @@ const Navbar = ({ title, parallax, homePage }) => {
         <AppBar
           position="fixed"
           className="appbar"
-          style={
+          style={{ backgroundColor: "black" }}  
+          /*style={
             homePage && count < 15 && parallax
               ? {
                   backgroundColor: "transparent",
@@ -93,7 +93,7 @@ const Navbar = ({ title, parallax, homePage }) => {
                   transition: "2s"
                 }
               : { backgroundColor: "black", transition: "2  s" }
-          }
+          }*/
         >
           <Toolbar>
             <Hidden mdUp>

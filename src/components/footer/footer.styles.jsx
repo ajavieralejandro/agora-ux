@@ -24,7 +24,8 @@ export const FooterBodyContainer = styled.div`
 `;
 
 export const FooterContainer = styled.div`
-  margin-top: 0%;
+  margin-top: 10%;
+  width: 100%;
 `;
 
 export const DT = styled.dt`

@@ -20,45 +20,43 @@ import CartButton2 from "../cartButton2/cartButton2.component";
 const BuyCourseCard = () => {
   return (
     <Wrap>
-      <StyledPaper elevation={3}>
-        <Container>
-          <StyledUl>
-            <StyledPrice>
-              <Price>$1200</Price>
-            </StyledPrice>
-            <StyledLi>
-              <FaCertificate />
-              <Space>Certificado de finalización</Space>
-            </StyledLi>
+      <Container>
+        <StyledUl>
+          <StyledPrice>
+            <Price>$1200</Price>
+          </StyledPrice>
+          <StyledLi>
+            <FaCertificate />
+            <Space>Certificado de finalización</Space>
+          </StyledLi>
 
-            <StyledLi>
-              <TiDocument />
-              <Space>Bibliografía exclusiva</Space>
-            </StyledLi>
-            <StyledLi>
-              <GoGraph />
-              <Space>Dificultad : Intermedia</Space>
-            </StyledLi>
-            <StyledLi>
-              <TiDocument />
-              <Space>17 Documentos</Space>
-            </StyledLi>
-            <StyledLi>
-              <FaCertificate />
-              <Space>Certificado de finalización</Space>
-            </StyledLi>
-            <StyledLi>
-              <TiDocument />
-              <Space>Bibliografía exclusiva</Space>
-            </StyledLi>
-            <StyledLi>
-              <GoGraph />
-              <Space>Dificultad : Intermedia</Space>
-            </StyledLi>
-          </StyledUl>
-          <CartButton2 />
-        </Container>
-      </StyledPaper>
+          <StyledLi>
+            <TiDocument />
+            <Space>Bibliografía exclusiva</Space>
+          </StyledLi>
+          <StyledLi>
+            <GoGraph />
+            <Space>Dificultad : Intermedia</Space>
+          </StyledLi>
+          <StyledLi>
+            <TiDocument />
+            <Space>17 Documentos</Space>
+          </StyledLi>
+          <StyledLi>
+            <FaCertificate />
+            <Space>Certificado de finalización</Space>
+          </StyledLi>
+          <StyledLi>
+            <TiDocument />
+            <Space>Bibliografía exclusiva</Space>
+          </StyledLi>
+          <StyledLi>
+            <GoGraph />
+            <Space>Dificultad : Intermedia</Space>
+          </StyledLi>
+        </StyledUl>
+        <CartButton2 />
+      </Container>
     </Wrap>
   );
 };

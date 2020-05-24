@@ -6,9 +6,7 @@ export const ParallaxImageDiv = styled.div`
   width: 400px;
 `;
 
-export const MarginDiv = styled.div`
-  margin-top: 5.3%;
-`;
+export const MarginDiv = styled.div``;
 
 export const Black = styled.div`
   margin-top: -5%;
@@ -53,15 +51,14 @@ export const RegisterButton = styled.a`
 `;
 
 export const Header = styled.header`
+  margin-top: 5.3%;
+
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: black;
   width: 100%;
-  @media (max-width: 800px) {
-    margin-top: -5%;
-  }
 `;
 
 export const StyledH1 = styled.h1`

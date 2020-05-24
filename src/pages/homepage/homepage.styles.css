@@ -1,0 +1,11 @@
+.gradient {
+  background-color: rgb(32, 30, 32);
+  background-image: linear-gradient(
+    90deg,
+    rgba(32, 30, 32, 1) 0%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(36, 73, 94, 0.9878326330532213) 45%,
+    rgba(27, 73, 82, 1) 70%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}

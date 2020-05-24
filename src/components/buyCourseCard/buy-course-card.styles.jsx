@@ -6,7 +6,14 @@ export const StyledPaper = styled(Paper)`
   height: 400px;
 `;
 
-export const Wrap = styled.div``;
+export const Wrap = styled.div`
+  background-color: #1f2e2e;
+  color: white;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 25px;
+  border: 2px solid black;
+`;
 
 export const StyledUl = styled.ul`
   list-style: none;
