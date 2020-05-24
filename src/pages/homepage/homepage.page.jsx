@@ -9,6 +9,7 @@ import Slide from "@material-ui/core/Slide";
 import { setHomePage } from "../../redux/collections/navigation/navigation.actions";
 import { connect } from "react-redux";
 import { default as Search } from "../../components/search/search.component";
+
 //Styles
 import {
   InsideParallaxDiv,
@@ -25,6 +26,7 @@ import "./homepage.styles";
 
 const HomePage = ({ setHomePage }) => {
   const [checked, setChecked] = React.useState(true);
+
   useEffect(() => {
     return () => {
       console.log("will unmount");

@@ -6,6 +6,7 @@ export const Wrap = styled.div`
   border: 2px solid black;
   padding: 10px;
   border-radius: 25px;
+  text-align: center;
 `;
 
 export const Wrap2 = styled.div`

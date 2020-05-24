@@ -7,7 +7,6 @@ export const StyledPaper = styled(Paper)`
 `;
 
 export const Wrap = styled.div`
-  background-color: #1f2e2e;
   color: white;
   border: 2px solid;
   padding: 10px;
@@ -25,7 +24,7 @@ export const StyledUl = styled.ul`
 
 export const StyledLi = styled.li`
   margin-bottom: 10px;
-  margin-top: 5%;
+  margin-top: 2%;
 `;
 
 export const StyledPrice = styled.li`
@@ -34,7 +33,7 @@ export const StyledPrice = styled.li`
 
 export const Space = styled.div`
   margin-left: 15%;
-  margin-top: -12%;
+  margin-top: -10%;
 `;
 
 export const Price = styled.h2``;

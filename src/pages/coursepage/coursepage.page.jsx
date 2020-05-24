@@ -1,13 +1,15 @@
 import React from "react";
+import YouTube from "react-youtube";
+
 import Navbar from "../../components/navbar/navbar.component";
 import Container from "@material-ui/core/Container";
 import BuyCourseCard from "../../components/buyCourseCard/buy-course-card.component";
 import CoursePageNavigation from "../../components/coursePageNavigation/course-page-navigation.component";
-import ImageResponsive from "react-image-responsive";
 import AvatarDocente from "../../components/avatarDocente/avatar-docente.component";
 import Grid from "@material-ui/core/Grid";
 import ModuleExpansionPanel from "../../components/modulePanel/module-panel.component";
-import CourseReviews from "../../components/courseReviews/course-reviews.component";
+import Reviews from "../../components/reviews/reviews.component";
+
 import {
   Wrap,
   Wrap2,
@@ -19,6 +21,15 @@ import {
 import { Parallax } from "react-parallax";
 
 const CoursePage = () => {
+  const opts = {
+    height: "400",
+    width: "100%",
+    playerVars: {
+      // https://developers.google.com/youtube/player_parameters
+      autoplay: 0
+    }
+  };
+
   return (
     <React.Fragment>
       <Wrap2>
@@ -41,6 +52,7 @@ const CoursePage = () => {
 
           <Grid container>
             <Grid item xs={12} md={8}>
+              <YouTube videoId="HZZfuowUgCg" opts={opts} />
               <Wrap>
                 <Container>
                   <StyledP>
@@ -66,9 +78,6 @@ const CoursePage = () => {
                     tener dos clases por semana distanciadas una de otra, o
                     simplemente una sola para poder llevar prácticas personales.
                   </StyledP>
-
-                  <ModuleExpansionPanel />
-                  <CourseReviews />
                 </Container>
               </Wrap>
             </Grid>
@@ -78,6 +87,7 @@ const CoursePage = () => {
               </Container>
             </Grid>
           </Grid>
+          <Reviews />
         </Container>
       </Wrap2>
     </React.Fragment>
