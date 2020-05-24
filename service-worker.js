@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/agora-ux/precache-manifest.cfbc833b8ba858d7058454d592ecf014.js"
+  "/agora-ux/precache-manifest.9cb86bb5859d4208c457e7d62e1dcfc1.js"
 );
 
 self.addEventListener('message', (event) => {
